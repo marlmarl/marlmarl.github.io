@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Politica';
+  src: url("fonts/Politica.ttf") format("truetype");
+}
+
 .nav a {
   color: #5a5a5a;
   font-size: 11px;
@@ -11,7 +16,7 @@
 }
 
 .jumbotron {
-  background-image:url('marl3.png');
+  background-image:url('images/marl3.png');
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
