@@ -1,0 +1,97 @@
+.nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image:url('marl3.png');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #666;
+  font-size: 80px; 
+  font-family: 'Politica', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 32px;
+  color: #999;
+  font-family:'Politica';
+}
+
+/*.learn-more {
+  background-color: #f7f7f7;*/
+}
+
+.learn-more h3 {
+  font-family: 'Politica', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.learn-more p {
+font-family:'Politica';
+color: #999;
+font-weight: 300;
+line-height: normal;
+font-size: 22px;
+
+}
+
+
+
+.learn-more a {
+  color: #00b0ff;
+}
+
+.skills {
+    background-color:#efefef;
+    border-bottom:1px solid #dbdbdb;
+}
+
+.skills h2 {
+    color:#393c3d;
+    font-size:32px;
+	font-family:'Politica';
+	text-align:center;
+}
+
+.skills p {
+
+    margin-bottom:13px;
+	color: #999;
+	text-align:center;
+	font-weight: 300;
+	line-height: normal;
+	font-family:'Politica';
+	margin-bottom: 18px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	font-size: 22px;
+	line-height: normal;
+	border: medium none;
+	padding-bottom: 0;
+	line-height: normal;}
+	
+}
+.skills.quote {
+  padding-bottom: 80px;
+  background-color:black;}
+
+
