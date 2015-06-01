@@ -16,8 +16,8 @@
 }
 
 .jumbotron {
-  background-image:url('images/marl3.png');
-  height: 500px;
+  background-image:url('images/marl33.png');
+  height: 550px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -28,16 +28,17 @@
 }
 
 .jumbotron h1 {
-  color: #666;
+  color: #444;
   font-size: 80px; 
   font-family: 'Politica', sans-serif;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .jumbotron p {
-  font-size: 32px;
+  font-size: 28px;
   color: #999;
   font-family:'Politica';
+  font-weight:100;
 }
 
 /*.learn-more {
@@ -98,5 +99,6 @@ font-size: 22px;
 .skills.quote {
   padding-bottom: 80px;
   background-color:black;}
-
+  
+  
 
