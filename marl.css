@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Politica';
-  src: url("fonts/Politica.ttf") format("truetype");
+  src:url("fonts/Politica.ttf") format("truetype");
 }
 
 .nav a {
@@ -17,7 +17,7 @@
 
 .jumbotron {
   background-image:url('images/marl500.png');
-  height: 600px;
+  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -28,17 +28,19 @@
 }
 
 .jumbotron h1 {
-  color: #444;
-  font-size: 80px; 
-  font-family: 'Politica', sans-serif;
+  color: #fff;
+  font-size: 64px; 
+  font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   font-weight: normal;
+  text-decoration:none;
 }
 
 .jumbotron p {
   font-size: 28px;
-  color: #999;
-  font-family:'Politica';
-  font-weight:100;
+  color: #666;
+  font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight:200;
+  text-decoration:none;
 }
 
 /*.learn-more {
@@ -53,7 +55,7 @@
 
 .learn-more p {
 font-family:'Politica';
-color: #999;
+color: #444;
 font-weight: 300;
 line-height: normal;
 font-size: 22px;
@@ -99,6 +101,8 @@ font-size: 22px;
 .skills.quote {
   padding-bottom: 80px;
   background-color:black;}
+  
+  
   
   
 
