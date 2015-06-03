@@ -8,13 +8,15 @@ body{
 font-family:Lora,'Times New Roman',serif;
 font-size:20px;
 color:#404040;
-background-color:#efefef;
+background-color:#fff;
 border-bottom:1px solid #dbdbdb;}
 
 p{
-line-height:normal;}
+line-height:normal;
+}
 p a{
-text-decoration:underline}
+text-decoration:underline;
+font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;}
 h1,h2,h3,h4,h5,h6{
 font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 font-weight:800}
@@ -129,7 +131,7 @@ font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 font-size:24px;margin:10px 0 30px;
 font-weight:600}
 .intro-header .post-heading .meta{
-font-family:Lora,'Times New Roman',serif;
+font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 font-style:italic;font-weight:300;
 font-size:20px}
 .intro-header .post-heading .meta a{
@@ -142,8 +144,7 @@ font-size:30px}}
 /*SKILLSY z podskillsami :p*/
 /*post-preview - ca³oœæ ///// post-title:grupa skillsów, np.techniczne, miêkkie//// Post-subtitle:rodzaj skillsa //// post-meta: skills */
 
-.szare {
-  }
+
 
 .post-preview>a{
 color:#404040}
@@ -159,15 +160,20 @@ font-size:32px;
 margin-top:50px;
 margin-bottom:50px;
 text-align:center;
-font-weight:400;
+font-weight:600;
 margin-left:40px;
 margin-right:40px;}
+
+.lang .post-preview .post-meta {
+color:#555;
+}
 
 .post-preview .post-subtitle {
 font-size:24;
 margin:0;
 margin-bottom:10px;
 margin-left:40px;
+font-weight:600;
 }
 
 .post-preview .post-meta{
@@ -192,6 +198,40 @@ font-size:36px;
 margin-top:60px;
 font-weight:700}
 
+.hardskills {background-color:#efefef;
+border-bottom:1px solid #dbdbdb;
+padding-bottom:80px;}
+
+.lang {background-color:#fff;
+border-bottom:1px solid #dbdbdb;
+padding-bottom:60px;
+}
+
+.soft {background-color: #f9f9f9;
+border-bottom:1px solid #dbdbdb;
+padding-bottom:40px;}
+
+.soft .post-subtitle {
+margin-top:30px;}
+
+.footer {background-color:#fff;;
+margin-bottom:50px;
+padding-bottom:30px;}
 
 
-.caption{text-align:center;font-size:14px;padding:10px;font-style:italic;margin:0;display:block;border-bottom-right-radius:5px;border-bottom-left-radius:5px}footer{padding:50px 0 65px}footer .list-inline{margin:0;padding:0}footer .copyright{font-size:14px;text-align:center;margin-bottom:0}.floating-label-form-group{font-size:14px;position:relative;margin-bottom:0;padding-bottom:.5em;border-bottom:1px solid #eee}.floating-label-form-group input,.floating-label-form-group textarea{z-index:1;position:relative;padding-right:0;padding-left:0;border:none;border-radius:0;font-size:1.5em;background:0 0;box-shadow:none!important;resize:none}.floating-label-form-group label{display:block;z-index:0;position:relative;top:2em;margin:0;font-size:.85em;line-height:1.764705882em;vertical-align:middle;vertical-align:baseline;opacity:0;-webkit-transition:top .3s ease,opacity .3s ease;-moz-transition:top .3s ease,opacity .3s ease;-ms-transition:top .3s ease,opacity .3s ease;transition:top .3s ease,opacity .3s ease}.floating-label-form-group::not(:first-child){padding-left:14px;border-left:1px solid #eee}.floating-label-form-group-with-value label{top:0;opacity:1}.floating-label-form-group-with-focus label{color:#0085a1}form .row:first-child .floating-label-form-group{border-top:1px solid #eee}.btn{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;text-transform:uppercase;font-size:14px;font-weight:800;letter-spacing:1px;border-radius:0;padding:15px 25px}.btn-lg{font-size:16px;padding:25px 35px}.btn-default:hover,.btn-default:focus{background-color:#0085a1;border:1px solid #0085a1;color:#fff}.pager{margin:20px 0 0}.pager li>a,.pager li>span{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;text-transform:uppercase;font-size:14px;font-weight:800;letter-spacing:1px;padding:15px 25px;background-color:#fff;border-radius:0}.pager li>a:hover,.pager li>a:focus{color:#fff;background-color:#0085a1;border:1px solid #0085a1}.pager .disabled>a,.pager .disabled>a:hover,.pager .disabled>a:focus,.pager .disabled>span{color:gray;background-color:#404040;cursor:not-allowed}::-moz-selection{color:#fff;text-shadow:none;background:#0085a1}::selection{color:#fff;text-shadow:none;background:#0085a1}img::selection{color:#fff;background:0 0}img::-moz-selection{color:#fff;background:0 0}body{webkit-tap-highlight-color:#0085a1}
+
+
+
+
+
+.pager{margin:20px 0 0}
+.pager li>a,
+.pager li>span{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;text-transform:uppercase;font-size:14px;font-weight:800;letter-spacing:1px;padding:15px 25px;background-color:#fff;border-radius:0}
+.pager li>a:hover,
+.pager li>a:focus{color:#fff;background-color:#0085a1;border:1px solid #0085a1}
+.pager .disabled>a,
+.pager .disabled>a:hover,
+.pager .disabled>a:focus,
+.pager .disabled>span{color:gray;background-color:#404040;cursor:not-allowed}
+
+::-moz-selection{color:#fff;text-shadow:none;background:#0085a1}::selection{color:#fff;text-shadow:none;background:#0085a1}img::selection{color:#fff;background:0 0}img::-moz-selection{color:#fff;background:0 0}body{webkit-tap-highlight-color:#0085a1}
