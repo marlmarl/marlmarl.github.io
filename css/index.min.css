@@ -21,7 +21,7 @@ a{color:#404040
 a:hover,a:focus{
 color:#0085a1}
 a img:hover,a img:focus{
-cursor:zoom-in}
+cursor:pointer;}
 blockquote{
 color:gray;
 font-style:italic}
@@ -98,7 +98,7 @@ background-attachment:scroll;-webkit-background-size:cover;-moz-background-size:
 
 .intro-header .site-heading,.intro-header .post-heading,.intro-header .page-heading{
 padding:100px 0 50px;
-color:#fff}@media only screen and (min-width:768px){
+color:#f9f9f9}@media only screen and (min-width:768px){
 .intro-header .site-heading,.intro-header .post-heading,.intro-header .page-heading{
 padding:150px 0}}
 .intro-header .site-heading,.intro-header .page-heading{
@@ -107,6 +107,7 @@ text-align:center}
 margin-top:0;
 font-size:80px;}
 .intro-header .site-heading .subheading,.intro-header .page-heading .subheading{
+color:black;
 font-size:24px;
 line-height:1.1;
 display:block;
