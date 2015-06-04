@@ -125,7 +125,7 @@ font-size:24px;
 line-height:1.1;
 display:block;
 font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-font-weight:300;
+font-weight:200;
 margin:10px 0 0}
 
 @media only screen and (min-width:768px){
@@ -159,26 +159,21 @@ background-color:#efefef;}
     font-size:32px;
 	font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 	text-align:center;
-	font-weight:100;
+	font-weight:600;
 	margin-bottom:30px;}
 
 
 .skills p {
-
-    margin-bottom:13px;
 	color: #444;
 	text-align:center;
-	font-weight: 300;
+	font-weight: 100;
 	line-height: normal;
 	font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-	margin-bottom: 18px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
-	font-size: 18px;
-	line-height: normal;
+	font-size: 24px;
 	border: medium none;
-	padding-bottom: 0;
-	line-height: normal;}
+}
 	
 
 .skills.quote {
