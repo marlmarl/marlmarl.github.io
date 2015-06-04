@@ -96,16 +96,29 @@ background-attachment:scroll;-webkit-background-size:cover;-moz-background-size:
 
 }
 
-.intro-header .site-heading,.intro-header .post-heading,.intro-header .page-heading{
+.intro-header .site-heading,
+.intro-header .post-heading,
+.intro-header .page-heading{
 padding:100px 0 50px;
-color:#f9f9f9}@media only screen and (min-width:768px){
-.intro-header .site-heading,.intro-header .post-heading,.intro-header .page-heading{
-padding:150px 0}}
-.intro-header .site-heading,.intro-header .page-heading{
-text-align:center}
-.intro-header .site-heading h1,.intro-header .page-heading h1{
+color:#f9f9f9}
+
+@media only screen and (min-width:768px){
+.intro-header .site-heading,
+.intro-header .post-heading,
+.intro-header .page-heading{
+padding:150px 0}
+}
+
+.intro-header .site-heading,
+.intro-header .page-heading{
+text-align:center
+}
+
+.intro-header .site-heading h1,
+.intro-header .page-heading h1{
 margin-top:0;
-font-size:80px;}
+font-size:50px;}
+
 .intro-header .site-heading .subheading,.intro-header .page-heading .subheading{
 color:black;
 font-size:24px;
@@ -113,13 +126,26 @@ line-height:1.1;
 display:block;
 font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 font-weight:300;
-margin:10px 0 0}@media only screen and (min-width:768px){
-.intro-header .site-heading h1,.intro-header .page-heading h1{
-font-size:60px;}}
+margin:10px 0 0}
+
+@media only screen and (min-width:768px){
+.intro-header .site-heading h1,
+.intro-header .page-heading h1{
+font-size:60px;}
+}
 
 .thumbnail {
 border:initial;
 background-color:#efefef;}
+
+.thumbnail:hover {
+    opacity: .7;
+}
+
+
+
+
+
 
 /*WSTEPNIAK*/
 
@@ -209,3 +235,5 @@ color:black;
 color:gray;
 background-color:#404040;
 cursor:not-allowed}
+
+
