@@ -1,6 +1,6 @@
 /*!Copyright 2015 marlmarl
 SOME ELEMENTS FROM THEMES:
- * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
+ * Start Bootstrap - Agency & Startbotstrap - Clean Blog(http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
@@ -41,7 +41,7 @@ section h2.section-heading {
     font-size: 40px;
 }
 
-section h3.section-heading {
+section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -120,7 +120,7 @@ section h3.section-heading {
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 7px solid #f1f1f1;
+    border: 7px solid yellow;
     border-radius: 100%;
     text-align: center;
     color: #fff;
