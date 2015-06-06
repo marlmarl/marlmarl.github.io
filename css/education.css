@@ -196,6 +196,9 @@ section h3.section-subheading {
     padding: 0;
     list-style-type: none;
 }
+.timeline li {
+	list-style-type: none;
+}
 
 .timeline:before {
     content: "";
@@ -290,19 +293,41 @@ section h3.section-subheading {
     margin-bottom: 0;
 }
 
-.timeline .timeline-heading h4 {
+.timeline .timeline-heading h4
+{
     margin-top: 0;
     color: inherit;
+	font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight:600;
+	font-size:18px;
+	
 }
+@media(min-width:768px) {
+.timeline .timeline-heading h4 {font-size:26px;}
+}
+
 
 .timeline .timeline-heading h4.subheading {
     text-transform: none;
+	font-size:14px;
+}
+
+@media(min-width:768px) {
+.timeline .timeline-heading h4.subheading{font-size:20px;}
 }
 
 .timeline .timeline-body>p,
 .timeline .timeline-body>ul {
     margin-bottom: 0;
+	font-family: Lora,"Times New Roman",serif;
 }
+@media(min-width:768px) {
+.timeline .timeline-body>p,
+.timeline .timeline-body>ul {
+  font-size:16px;
+}
+}
+
 
 @media(min-width:768px) {
     .timeline:before {
