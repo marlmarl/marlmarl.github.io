@@ -11,7 +11,7 @@ font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 overflow-x:hidden;
 font-size:20px;
 color:#404040;
-background-color:#fff;
+background-color: #efefef;
 border-bottom:1px solid #dbdbdb;
 }
 
@@ -184,10 +184,10 @@ section h3.section-subheading {
 }
 
 @media(min-width:768px) {
-    section {
+section {
         padding: 150px 0;
     }
-} */
+}
 
 /* ------------------------------------------------kó³eczka--------------------------------------- */
 
@@ -198,23 +198,24 @@ section h3.section-subheading {
 }
 .timeline li {
 	list-style-type: none;
+	
 }
 
+/* ---------linia----------- */
 .timeline:before {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
     left: 40px;
-    width: 2px;
-    margin-left: -1.5px;
-    background-color: #f1f1f1;
+    width: 2px; 
+    background-color: #d8d0cf;
 }
 
 .timeline>li {
     position: relative;
     margin-bottom: 50px;
-    min-height: 50px;
+	min-height: 50px;
 }
 
 .timeline>li:before,
@@ -233,6 +234,7 @@ section h3.section-subheading {
     width: 100%;
     padding: 0 20px 0 100px;
     text-align: left;
+	
 }
 
 .timeline>li .timeline-panel:before {
@@ -256,17 +258,40 @@ section h3.section-subheading {
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 7px solid yellow;
+    border: 7px solid #fed136;
     border-radius: 100%;
     text-align: center;
     color: #fff;
     background-color: #fed136;
+
 }
+
+/* ------kolory kó³eczek------ */
+.timeline>li .img1 {
+border: 7px solid #a34e5a
+}
+.timeline>li .img2 {
+border: 7px solid #5a4743;
+}
+.timeline>li .img3 {
+border: 7px solid #a34e5a;
+}
+.timeline>li .img4 {
+border: 7px solid #5a4743;
+}
+.timeline>li .img5 {
+border: 7px solid #a34e5a;
+}
+
+/* ------------koniec kolorow koleczek---------- */
+
+
 
 .timeline>li .timeline-image h4 {
     margin-top: 12px;
     font-size: 10px;
     line-height: 14px;
+
 }
 
 .timeline>li.timeline-inverted>.timeline-panel {
@@ -300,6 +325,7 @@ section h3.section-subheading {
 	font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight:600;
 	font-size:18px;
+
 	
 }
 @media(min-width:768px) {
@@ -319,7 +345,11 @@ section h3.section-subheading {
 .timeline .timeline-body>p,
 .timeline .timeline-body>ul {
     margin-bottom: 0;
+	margin-top: 40px;
+	margin-left:-30px;
+
 	font-family: Lora,"Times New Roman",serif;
+	
 }
 @media(min-width:768px) {
 .timeline .timeline-body>p,
@@ -414,6 +444,7 @@ section h3.section-subheading {
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 100px 20px 20px;
     }
+
 }
 
 

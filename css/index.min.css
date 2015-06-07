@@ -140,7 +140,10 @@ background-color:#efefef;}
 
 .thumbnail:hover {
     opacity: .7;
+	/* filter: blur(2px); */
+	
 }
+
 
 
 
