@@ -8,11 +8,11 @@ SOME ELEMENTS FROM THEMES:
 /* -------------------------body ze skillsów------------------------------------- */ 
 body{
 font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-overflow-x:hidden;
 font-size:20px;
 color:#404040;
 background-color: #efefef;
 border-bottom:1px solid #dbdbdb;
+margin:0;
 }
 
 .text-muted {
@@ -165,7 +165,10 @@ margin:10px 0 0}
 /* --------------------------nag³ówek i ca³oœæ sekcji z kó³kami---------------------------------- */
 
 section {
-    padding: 100px 0;
+    padding-top: 100px;
+	padding-bottom:30px;
+	border-bottom:1px solid #dbdbdb;
+	margin-bottom:0;
 }
 
 section h2.section-heading {
@@ -185,7 +188,8 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
 section {
-        padding: 150px 0;
+        padding-top: 150px;
+		padding-bottom: 50px;
     }
 }
 
@@ -380,6 +384,9 @@ padding:0;
 .timeline .timeline-subbody>p {
 margin-top:10px;
 }
+.timeline .timeline-subbody>h4 {
+margin-top:15px;
+}
 
 
 
@@ -480,9 +487,10 @@ margin-top:10px;
 /* ------------footer-------------- */
 
 
-.footer {background-color:#fff;;
-margin-bottom:50px;
-padding-bottom:30px;}
+.footer {
+background-color:#fff;
+padding-bottom:80px;
+}
 
 .pager{margin:20px 0 0}
 .pager li>a,
