@@ -29,17 +29,21 @@
 </head>
 
 <body>
-
+	<div id="canvasBubbles">
+		
+	</div>
+ 
 <!-- -----header---------- -->
 	
-    <header id="top" class="intro-header">
-        <div class="container">
+    <header class="intro-header">
+        <div class="container" >
             <div class="row">
                 <div class="col-md-12">
                     <div class="site-heading">
                         <h1>Hello!</h1>
                         <hr class="small">
                         <span class="subheading">let's get to know each other</span>
+						<a href="#wstep" class="page-scroll btn btn-xl">enter</a>
                     </div>
                 </div>
             </div>
@@ -87,62 +91,61 @@
         <hr class="krecha">
 
         <!------------------- wstep ------------->
-        <div class="segment wstep">
 		
-		
-           <!--  <img class="segment-image img-circle img-responsive pull-right" src="img/web.png"> -->
-            <h2 class="segment-heading">Trochę o mnie...</h2>
+		    <div class="segment wstep" id="wstep">
+            <img class="segment-image img-circle img-responsive pull-right" src="img/marl400.jpg">
+            <h2 class="segment-heading">trochę o mnie...</h2>
 			
-			<div class="quote">
-				
-				<h3 class="wstep-content">Mówi się, że są dwa rodzaje ludzi:<br>
-				Tacy, którzy wiedzą WSZYSTKO O CZYMŚ... i tacy, którzy wiedzą COŚ O WSZYTSKIM<br>
+				<p class="wstep-content">Mówi się, że są dwa rodzaje ludzi:<br>
+				Tacy, którzy wiedzą <strong>WSZYSTKO O CZYMŚ</strong>... i tacy, którzy wiedzą <strong>COŚ O WSZYTSKIM</strong><br>
 				Ja należę do tej drugiej kategorii.<br>
 				Dzielę swoją energię i pasję na szerokie spektrum zainteresowań i aktywności.<br>
-				</h3>
-			
-			</div>
-		
+				</p>
 				
         </div>
+  
+ <hr class="krecha">
+    
 
-        <hr class="krecha">
-
-        <!-- thumbnailsy------------->
-        <div class="segment thumb" id="thumb">
+        <!-- segment kolka------------->
+        <div class="kolka">
            
             <h2 class="segment-heading">co mnie kręci:</h2>
 				
-				 <div class="row thumbrow">
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                         <a href="skills.html#web"><img src="img/webth.png"/></a>
-                    </div>
-                    <div class="thumbnail">
-                         <a href="skills.html#geek"><img src="img/geekyth.png"/></a>
-                    </div>
-                </div>
-               
-                <div class="col-md-4">
-                     <div class="thumbnail">
-                         <a href="skills.html#social"><img src="img/socialth.png"/></a>
-                    </div>
-					
-                    <div class="thumbnail">
-                         <a href="skills.html#text"><img src="img/textth.png"/></a>
-                    </div>
-                </div>
-               
-                <div class="col-md-4">
-                     <div class="thumbnail">
-                         <a href="skills.html#graph"><img src="img/graphth.png"/></a>
-                    </div>
-					
-                    <div class="thumbnail">
-                         <a href="skills.html#soft"><img src="img/creatth.png"/></a>
-                    </div>
-                </div>
-            </div>
+	
+
+				<div class="row">
+					<div class="col-sm-4">
+						<img class="img-circle img-responsive img-center" src="img/web300.png" alt="">
+						
+					</div>
+					<div class="col-sm-4">
+						<img class="img-circle img-responsive img-center" src="img/graph300.png" alt="">
+					   
+					</div>
+					<div class="col-sm-4">
+						<img class="img-circle img-responsive img-center" src="img/social300.png" alt="">
+						
+					</div>
+				</div>
+				
+			
+
+				<div class="row">
+					<div class="col-sm-4">
+						<img class="img-circle img-responsive img-center" src="img/geeky300.png" alt="">
+						
+					</div>
+					<div class="col-sm-4">
+						<img class="img-circle img-responsive img-center" src="img/text300.png" alt="">
+					   
+					</div>
+					<div class="col-sm-4">
+						<img class="img-circle img-responsive img-center" src="img/lang300.png" alt="">
+						
+					</div>
+				</div>
+      
         </div>
 		
 
@@ -150,7 +153,7 @@
 
         <!-- kontakt -->
         <div class="segment contact" id="contact">
-            <img class="segment-image img-responsive pull-left" src="img/marl400.png">
+            <img class="segment-image img-circle img-responsive pull-left" src="http://placehold.it/400x400">
             <h2 class="segment-heading">kontakt</h2>
 			<h3 class="lead">można do mnie dzwonić o każdej porze:</h3>
 			<h2>+48 505967536</h2>
@@ -197,6 +200,28 @@
 	
 	<!-- Custom JavaScript -->
     <script src="js/clean-blog.min.js"></script>
+	<script src="js/pagescroll.js"></script>
+	
+	<!-- ------------bubbles------------ -->
+	
+	<script src="js/bubbles.js"></script>
+        
+	
+		<script>
+		bubblesMain(new Object({
+        type : 'radial',
+        revolve : 'center',
+        minSpeed : 100,
+        maxSpeed : 500,
+        minSize : 10,
+        maxSize : 50,
+        num : 300,
+        colors : new Array('#DE2020','#CCDE21','#729BB1', '#2D8A15', '#620D4C')
+		}));
+
+		</script>
+		
+	
 	
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
