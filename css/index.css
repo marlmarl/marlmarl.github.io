@@ -276,10 +276,19 @@ margin: 50px 0;
     font-size: 50px;
 	text-transform:lowercase;
 	text-align:center;
-	margin-bottom:70px;
+	margin-bottom:50px;
 	color:#777777;
 	
 }
+.click {
+    font-size: 20px;
+	text-transform:lowercase;
+	text-align:center;
+	margin-top:-40px;
+	color:#999999;
+	}
+	
+
 
 
 @media(max-width:1200px) {
@@ -378,7 +387,8 @@ margin: 50px 0;
 /*  ---------------wstep------------------ */
 
 .wstep-content {
-text-align:left;
+text-align:center;
+text-align:center;
 color:white;
 font-size:20px;
 font-weight:200;
@@ -394,15 +404,16 @@ margin-bottom:70px;
 }
 
 .niebieski{
-font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-font-weight:800;
 color:#1FA4C6;
+font-weight:400;
+text-transform:uppercase;
+
 }
 
 .czerwony{
-font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-font-weight:800;
 color:#DE2020;
+font-weight:400;
+/* text-transform:uppercase; */
 }
  /* ----------------ko³ka--------------- */
 
