@@ -17,7 +17,7 @@ font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 
 }
 h1,h2,h3,h4,h5,h6{
-font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+font-family:'Open Sans','Helvetica Neue','Helvetica' ,'Arial', sans-serif;
 text-align:center;
 
 }
@@ -258,8 +258,9 @@ color:#0085a1}
 	}
 	
 
-.segment-image {
-border: 15px solid rgba(204, 222, 33, 1);
+.segment-image,
+.fotka {
+border: 5px solid rgba(204, 222, 33, 1);
 margin: 50px 0;
 }
 
@@ -390,7 +391,7 @@ margin: 50px 0;
 text-align:center;
 text-align:center;
 color:white;
-font-size:20px;
+font-size:14px;
 font-weight:200;
 margin-bottom:30px;
 margin-left:30px;
@@ -399,23 +400,14 @@ margin-left:30px;
 
 @media only screen and (min-width:768px){
 .wstep-content {
-font-size:26px;
+font-size:18px;
 margin-bottom:70px;
 }
 }
 
-.niebieski{
-color:#1FA4C6;
-font-weight:400;
-text-transform:uppercase;
 
-}
 
-.czerwony{
-color:#DE2020;
-font-weight:400;
-/* text-transform:uppercase; */
-}
+
  /* ----------------ko³ka--------------- */
 
  .kolka
@@ -439,6 +431,10 @@ color:#d2d2d2;
 	
 }
  
+.fotka {
+	opacity:1;
+}
+
 /*  ----------kontakt--------- */
 
  
