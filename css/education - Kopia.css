@@ -7,19 +7,19 @@ SOME ELEMENTS FROM THEMES:
 
 /* -------------------------body ze skillsów------------------------------------- */ 
 body{
-background-image:url("../img/backgroundbw.jpg");
-background-position: center;
-background-attachment: fixed;
-background-repeat: no-repeat;
 font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-color:white;
+font-size:20px;
+color:#404040;
+background-color: #efefef;
+border-bottom:1px solid #dbdbdb;
+margin:0;
 }
 
 .text-muted {
-    color: white;
+    color: #777;
 }
 .text-primary {
-    color: white;
+    color: #fed136;
 }
 p{
 line-height:1.75;
@@ -45,14 +45,6 @@ max-width:100px;
 margin:15px auto;
 border-width:4px;
 border-color:#fff}
-
-.navbar-default .navbar-nav > li > a  {
-color:#739cb2;
-}
-a:hover,a:focus{
-color:grey}
-
-
 /* -------------------------koniec body ze skillsów------------------------------*/
 
 
@@ -85,13 +77,13 @@ background:0 0;
 border-bottom:1px solid transparent}
 
 .navbar-custom .navbar-brand{
-color:#739cb2;
+color:#fff;
 padding:20px}
 
 .navbar-custom .navbar-brand:hover,.navbar-custom .navbar-brand:focus{
 color:rgba(255,255,255,.8)}
 .navbar-custom .nav li a{
-color:#739cb2;
+color:#fff;
 padding:20px}
 .navbar-custom .nav li a:hover,.navbar-custom .nav li a:focus{
 color:rgba(255,255,255,.8)}}@media only screen and (min-width:1170px){
@@ -120,65 +112,67 @@ color:#0085a1}
 /*NAPIS NA OBRAZKU*/
 
 .intro-header{
-background-color:rgba(0,0,0,0.6);
-height: 500px;
-background-repeat: no-repeat;
-background-size: cover;
+background-color:gray;
+background:no-repeat center center;
 background-attachment:scroll;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;
 
 }
 
-.intro-header .site-heading{
+.intro-header .site-heading,
+.intro-header .post-heading,
+.intro-header .page-heading{
 padding:100px 0 50px;
-color:#f7f7f7}
+color:#f7f7f7;
+
+}
 
 @media only screen and (min-width:768px){
-.intro-header .site-heading{
+.intro-header .site-heading,
+.intro-header .post-heading,
+.intro-header .page-heading{
 padding:150px 0}
 }
 
-.intro-header .site-heading {
+.intro-header .site-heading,
+.intro-header .page-heading{
 text-align:center
 }
-.intro-header .site-heading h1{
+.intro-header .site-heading h1,
+.intro-header .page-heading h1{
 margin-top:0;
-font-weight:800;
 font-size:40px;
-color#f7f7f7;
-
 }
-
 @media only screen and (min-width:768px){
-.intro-header .site-heading h1{
-font-size:80px;}
+.intro-header .site-heading h1,
+.intro-header .page-heading h1{
+font-size:60px;}
 }
 
 
 
-.intro-header .site-heading .subheading {
-color:#777;
-line-height: 1.1;
-font-size:40px;
+.intro-header .site-heading .subheading,
+.intro-header .page-heading .subheading{
+color:black;
+font-size:24px;
 line-height:1.1;
 display:block;
 font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-font-weight:500;
+font-weight:300;
 margin:10px 0 0}
-
+ 
  
 
 /* --------------------------nag³ówek i ca³oœæ sekcji z kó³kami---------------------------------- */
 
 section {
-	
     padding-top: 100px;
 	padding-bottom:30px;
+	border-bottom:1px solid #dbdbdb;
 	margin-bottom:0;
 }
 
 section h2.section-heading {
-
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
 }
@@ -202,7 +196,6 @@ section {
 /* ------------------------------------------------kó³eczka--------------------------------------- */
 
 .timeline {
-	
     position: relative;
     padding: 0;
     list-style-type: none;
@@ -219,8 +212,8 @@ section {
     top: 0;
     bottom: 0;
     left: 40px;
-    width: 1px; 
-	border-right:4px dashed #cddf11;
+    width: 2px; 
+    background-color: #d8d0cf;
 	
 }
 
@@ -241,9 +234,6 @@ section {
 }
 
 .timeline>li .timeline-panel {
-	background-color:rgba(0,0,0,0.6);
-	border:4px dashed #cddf11;
-	border-radius: 15px;
     float: right;
     position: relative;
     width: 100%;
@@ -266,8 +256,6 @@ section {
     border-left-width: 0;
 }
 
-/*ikona*/
-
 .timeline>li .timeline-image {
     z-index: 100;
     position: absolute;
@@ -275,19 +263,19 @@ section {
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 0px solid;
+    border: 7px solid #fed136;
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: black;
-}
-   
+    background-color: #fed136;
 
 }
 
 /* ------kolory kó³eczek------ */
-
-/*.timeline>li .img2 {
+.timeline>li .img1 {
+border: 7px solid #a34e5a
+}
+.timeline>li .img2 {
 border: 7px solid #5a4743;
 }
 .timeline>li .img3 {
@@ -301,8 +289,6 @@ border: 7px solid #a34e5a;
 }
 
 /* ------------koniec kolorow koleczek---------- */
-
-
 
 
 
@@ -339,7 +325,7 @@ border: 7px solid #a34e5a;
 
 .timeline .timeline-heading h4
 {
-    margin-top: 20px;
+    margin-top: 0;
     color: inherit;
 	font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight:600;
@@ -368,7 +354,7 @@ border: 7px solid #a34e5a;
 .timeline .timeline-subbody>ul{
     margin-bottom: 0;
 	margin-top: 40px;
-	margin-left:0px;
+	margin-left:-30px;
 	font-family: Lora,"Times New Roman",serif;
 	font-size:14px;
 
@@ -498,53 +484,11 @@ margin-top:15px;
 
 }
 
-/*------------kursy----------------*/
-
- .kursy {
- 
-	background-color: rgba(0,0,0,0.7);
-	background-position: center;
-	border-radius:15px;
-	padding-bottom:50px;
-
- }
- 
- .kursy h4 {
- margin-bottom:40px;
- }
-
-.img-center {
-    margin: 40px auto;
-	
-}
-
-.kursy-list li{
-	text-align: left;
-	list-style-type:none;
-	line-height:200%;
-}
-
-.listaiko {
-	opacity: 0.2;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
-	margin:0 auto;
-}
-
-.kurs-nazwa {
-	text-align:left;
-	line-height:2;
-}
-
-.kurs-nazwa p {
-	margin:0;
-	line-height:2;
-}
-
 /* ------------footer-------------- */
 
 
 .footer {
-background-color:black;
+background-color:#fff;
 padding-bottom:80px;
 }
 

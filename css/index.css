@@ -8,7 +8,7 @@ some code elements inspired by Start Bootstrap themes:
 
 body {
 
-background-image:url("../img/kubekbw.jpg");
+background-image:url("../img/kubekbws.jpg");
 background-position: center;
 background-attachment: fixed;
 background-repeat: no-repeat;
@@ -35,6 +35,7 @@ list-style-type: none;
 .navbar-default .navbar-nav > li > a  {
 color:#739cb2;
 }
+
 a:hover,a:focus{
 color:grey}
 
