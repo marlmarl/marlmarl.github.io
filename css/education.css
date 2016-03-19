@@ -521,14 +521,25 @@ margin-top:15px;
 .kursy-list li{
 	text-align: left;
 	list-style-type:none;
-	line-height:200%;
+	line-height:150%;
+	position: relative;
+	padding: 0 0 0 30px;
+	margin-bottom:10px;
+	
+
 }
 
 .kursy-list li img{
 	opacity: 0.2;
     filter: alpha(opacity=40); /* For IE8 and earlier */
 	margin-right:20px;
-	
+	position: absolute; top: 0; left: 0;
+}
+
+.kursy-list li .kurs {
+line-height:100%;
+vertical-align:top;
+text-align:right;
 }
 
 .listaiko {
