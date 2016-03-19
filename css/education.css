@@ -517,6 +517,8 @@ margin-top:15px;
     margin: 40px auto;
 	
 }
+.kursy-list
+{padding-left:0;}
 
 .kursy-list li{
 	text-align: left;
