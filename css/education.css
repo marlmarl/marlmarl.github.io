@@ -524,6 +524,13 @@ margin-top:15px;
 	line-height:200%;
 }
 
+.kursy-list li img{
+	opacity: 0.2;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+	margin-right:20px;
+	
+}
+
 .listaiko {
 	opacity: 0.2;
     filter: alpha(opacity=40); /* For IE8 and earlier */
