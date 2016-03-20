@@ -24,6 +24,7 @@ color:white;
 p{
 line-height:1.75;
 font-size:14px;
+font-family:Merriweather;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -518,7 +519,8 @@ margin-top:15px;
 	
 }
 .kursy-list
-{padding-left:0;}
+{padding-left:auto;
+}
 
 .kursy-list li{
 	text-align: left;
@@ -558,6 +560,22 @@ text-align:right;
 .kurs-nazwa p {
 	margin:0;
 	line-height:2;
+}
+
+.kursy-list li .szkola {
+	opacity: 0.2;
+	line-height:100%;
+	vertical-align:top;
+	text-align:right;
+	margin-left:6px;
+	}
+	
+.kursy-list li ol li{
+list-style-type:decimal;
+line-height:100%;
+font-size:90%;
+text-indent:-4px;
+
 }
 
 /* ------------footer-------------- */
