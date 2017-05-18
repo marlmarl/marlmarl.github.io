@@ -100,7 +100,6 @@ section .container {
 }
 
 
-
 .skills .container {
     padding-bottom:0;
 }
@@ -114,6 +113,15 @@ section .container {
     position:relative;
   
 }
+
+
+.intro-container {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
 
 .skills .flex-container {
     justify-content: space-around;
@@ -352,12 +360,10 @@ nav .flex-container {
 /*intro*/
 
 .intro {
-    height:100vh;
-    margin:0 auto;
+    
     display:flex;
     justify-content: center;
-    align-items:center;
-    padding:3vw 0;
+    padding:6vw 0;
 }
 
 .hellobox {
