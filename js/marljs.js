@@ -10,7 +10,7 @@ var contactOpen = document.getElementById("contact-open");
 
 
 menuOpen.onclick = function() {
-    mainNav.style.display = "flex"
+    mainNav.style.display = "flex";
     miniNav.style.display = "none";
 }
 
@@ -42,6 +42,8 @@ contactOpen.onclick = function() {
 
 $('#about1').click(function(event){
     $('#about1-details').show();
+    ga('send', 'event', 'experience details','click', 'fiufiu');
+    
 })
 
 $('#about1-close').click(function(event){
