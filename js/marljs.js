@@ -42,7 +42,7 @@ contactOpen.onclick = function() {
 
 $('#about1').click(function(event){
     $('#about1-details').show();
-    ga('send', 'event', 'experience details','click', 'fiufiu');
+    ga('send', 'event', 'experience details','click', 'about');
     
 })
 
@@ -52,6 +52,7 @@ $('#about1-close').click(function(event){
 
 $('#about2').click(function(event){
     $('#about2-details').show();
+    ga('send', 'event', 'education details','click', 'about');
 })
 
 $('#about2-close').click(function(event){
@@ -60,6 +61,7 @@ $('#about2-close').click(function(event){
 
 $('#about3').click(function(event){
     $('#about3-details').show();
+    ga('send', 'event', 'passions details','click', 'about');
 })
 
 $('#about3-close').click(function(event){
@@ -68,6 +70,7 @@ $('#about3-close').click(function(event){
 
 $('#about4').click(function(event){
     $('#about4-details').show();
+    ga('send', 'event', 'what i am looking for','click', 'about');
 })
 
 $('#about4-close').click(function(event){
