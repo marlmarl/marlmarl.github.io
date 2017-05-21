@@ -1,3 +1,4 @@
+
 var menuOpen = document.getElementById("menu-open");
 var mainNav = document.getElementById("main-nav");
 var miniNav = document.getElementById("mini-nav");
