@@ -106,7 +106,7 @@ $( document ).ready(function() {
             
             if (($('#about4-details').is(":visible")) && ($(event.target).closest('#about4-details').length === 0) && ($(event.target).closest('#about4').length === 0)) {
             $("#about4-details").hide();
-            ga('send', 'event', 'whai am i close outside window','click', 'about');
+            ga('send', 'event', 'what am i close outside window','click', 'about');
 
         }
     });
@@ -135,7 +135,7 @@ $( document ).ready(function() {
     $('#skill2-close').click(function(event){
         $('#skill2-details').hide();
         $('#skill2').show();
-        ga('send', 'event', 'desugn','click', 'skills');
+        ga('send', 'event', 'design','click', 'skills');
     })
 
     $('#skill3-button').click(function(event){
