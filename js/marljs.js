@@ -5,7 +5,7 @@ $( document ).ready(function() {
     $('#menu-open').click(function(event){
         $('#mini-nav').hide();
         $('#main-nav').css("display", "flex");
-        ga('send', 'event', 'manu open','click', 'menu');
+        ga('send', 'event', 'menu open','click', 'menu');
     })
 
     $('#menu-close').click(function(event){
