@@ -396,6 +396,55 @@ nav .flex-container {
 
 
 
+
+
+
+
+.boxglasses {
+    background-size:100% 50%;
+    background-repeat: no-repeat;
+    background-image: url("../img/nerdybb.png");
+
+}
+
+.eye {
+    position:absolute;
+    height:20%;
+    width:20%;
+    background-color:#ffffff;
+    border-radius:50%;
+
+}
+
+.pupil{
+    position:absolute;
+    height:50%;
+    width:50%;
+    background-color:#1C1B20;
+    border-radius:50%;
+    top:50%;
+    left:25%;
+    transform-origin:50% 0 0;
+    animation-name:rotate;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+
+}
+
+.eye1 {
+    top:15%;
+    left:15%; 
+}
+
+.eye2{
+    top:15%;
+    right:15%; 
+}
+
+.boxglasses h2{
+    color:#ffffff;
+}
+
 .glasses-content {
     background-color:#1C1B20;
     position: absolute;
@@ -407,20 +456,6 @@ nav .flex-container {
     justify-content: center;
     align-items: center;
 }
-
-
-
-.boxglasses {
-    background-size:100% 50%;
-    background-repeat: no-repeat;
-    background-image: url("../img/nerdyblue2.png");
-
-}
-
-.boxglasses h2{
-    color:#ffffff;
-}
-
 
 /*---intro right side---*/
 .boxjob {
@@ -449,8 +484,7 @@ nav .flex-container {
 
 .boxheart:hover, 
 .boxjob:hover,
-.boxmeetme:hover,
-.boxglasses:hover{
+.boxmeetme:hover {
     z-index: 100;
     animation-name: beating-heart;
     animation-duration:1s;
