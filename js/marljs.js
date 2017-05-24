@@ -44,6 +44,17 @@ $(document).ready(function() {
     $(document).mousemove(eye1Movement);
     $(document).mousemove(eye2Movement);
     
+    /*INTRO HOVERS*/
+    $('.boxjob').click(function(event){
+        $('.tolove').addClass('toloveup');
+        $('.tolove > div').hide();
+        $('.arrow').css("opacity", "1");
+        $('.boxmeetme > div > a').css({
+            '-webkit-transform': 'scale3d(1.05, 1.05, 1.05)',
+            '-moz-transform': 'scale3d(1.05, 1.05, 1.05)',
+            '-o-transform': 'scale3d(1.05, 1.05, 1.05)'});     
+    })
+    
     /*MENU*/
 
     $('#menu-open').click(function(event){

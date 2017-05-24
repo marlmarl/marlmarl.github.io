@@ -504,9 +504,15 @@ nav .flex-container {
     top:18%;
     color:#ffffff;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: transform 1.5s;
 }
   
+.toloveup {
+    box-shadow:none;
+    transform:translateY(-100%);  
+}
 
+/*
 .boxjob:hover ~ .boxheart h2,
 .boxheart:hover .tolove h2{
    display:none;
@@ -530,6 +536,7 @@ nav .flex-container {
     animation-name:pulse;
     animation-duration:1.5s;
 }
+*/
 
 
 
