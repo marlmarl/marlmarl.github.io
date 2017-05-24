@@ -256,6 +256,7 @@ section .container {
 
 .mainbutton:hover {
     background-color:#717171;  
+    box-shadow: none;
 
 
 }
@@ -497,6 +498,7 @@ nav .flex-container {
 }
 
 
+
 .boxmeetme a {
     position:absolute;
     top:18%;
@@ -591,6 +593,16 @@ nav .flex-container {
 
 
 /*#####ABOUT SECTION#####*/
+.boxabout {
+    z-index:2;
+    transition: box-shadow 0.5s;
+    
+}
+
+.boxabout:hover {
+    /*transform: scale3d(1.00, 1.00, 0.95);*/
+    box-shadow:none;
+}
 
 
 .about-details {
@@ -611,6 +623,8 @@ nav .flex-container {
 .about h3,
 .about-details h3 {
     text-align: center;
+    
+ 
     
 }
 
