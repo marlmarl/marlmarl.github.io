@@ -475,6 +475,13 @@ nav .flex-container {
     
 }
 
+.hand {
+    background-size:100% 100%;
+    background-image: url("../img/hand.png");
+    transition: transform 1.5s;
+}
+
+
 .boxicon {
     font-size:14vw;
 }
