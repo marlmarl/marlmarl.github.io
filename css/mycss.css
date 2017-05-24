@@ -19,6 +19,7 @@ body {
 p, ul, ol {
     font-family: 'Source Code Pro', monospace;
     color:#1C1B20;
+    color:#000000;
 }
 
 p {
@@ -232,8 +233,8 @@ section .container {
 
 /*#####buttons#####*/
 .mainbutton {
-    background-color: #717171;
-    border: 3px solid #717171;
+    background-color: #1C1B20;
+    border:none;
     color:#ffffff;
     border-radius: 5px;
     padding: 0.5em 0.5em;
@@ -254,9 +255,8 @@ section .container {
 }
 
 .mainbutton:hover {
-    color:#ffffff;
-    background-color:#1C1B20;  
-    border-color: #1C1B20;
+    background-color:#717171;  
+
 
 }
 
@@ -425,18 +425,19 @@ nav .flex-container {
     top:50%;
     left:25%;
     transform-origin:50% 0 0;
+ /*   transform: rotate(210deg);
     animation-name:rotate;
     animation-duration:4s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;*/
 
 }
 
-.eye1 {
+#eye1 {
     top:15%;
     left:15%; 
 }
 
-.eye2{
+#eye2{
     top:15%;
     right:15%; 
 }
@@ -458,6 +459,7 @@ nav .flex-container {
 }
 
 /*---intro right side---*/
+
 .boxjob {
     background-color: #f8f8f8;
     background: repeating-linear-gradient(
@@ -467,6 +469,8 @@ nav .flex-container {
         #ffffff 2px,
         #ffffff 6px);
 }
+
+
 
 
 .boxheart {
@@ -482,6 +486,7 @@ nav .flex-container {
     background-color:transparent;
 }
 
+/*
 .boxheart:hover, 
 .boxjob:hover,
 .boxmeetme:hover {
@@ -489,6 +494,7 @@ nav .flex-container {
     animation-name: beating-heart;
     animation-duration:1s;
 }
+*/
 
 
 /*---keyframes---*/

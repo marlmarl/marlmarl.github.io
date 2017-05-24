@@ -1,4 +1,48 @@
-$( document ).ready(function() {
+/*EYE MOVEMENT*/
+var eye1 = $('#eye1');
+var eye2 = $('#eye2');
+var pupil1 = $('#pupil1');
+var pupil2 = $('#pupil2');
+
+function eye1Movement(evt) {
+    var eye1Offset = eye1.offset();
+    var mouseX = evt.pageX;
+    var mouseY = evt.pageY;
+    var eye1CenterX = (eye1Offset.left) + (eye1.width() / 2);
+    var eye1CenterY = (eye1Offset.top) + (eye1.height() / 2);
+    var radians = Math.atan2(mouseX - eye1CenterX, mouseY -eye1CenterY);
+    var degree = (radians * (180 / Math.PI) * -1);
+    pupil1.css({
+        '-webkit-transform' : 'rotate('+degree+'deg)',
+        '-moz-transform' : 'rotate('+degree+'deg)',
+        '-ms-transform' : 'rotate('+degree+'deg)',
+        '-o-transform' : 'rotate('+degree+'deg)',
+        'transform' : 'rotate('+degree+'deg)',
+    });
+}
+
+function eye2Movement(evt) {
+    var eye2Offset = eye2.offset();
+    var mouseX = evt.pageX;
+    var mouseY = evt.pageY;
+    var eye2CenterX = (eye2Offset.left) + (eye2.width() / 2);
+    var eye2CenterY = (eye2Offset.top) + (eye2.height() / 2);  
+    var radians = Math.atan2(mouseX - eye2CenterX, mouseY -eye2CenterY);
+    var degree = (radians * (180 / Math.PI) * -1);
+    pupil2.css({
+        '-webkit-transform' : 'rotate('+degree+'deg)',
+        '-moz-transform' : 'rotate('+degree+'deg)',
+        '-ms-transform' : 'rotate('+degree+'deg)',
+        '-o-transform' : 'rotate('+degree+'deg)',
+        'transform' : 'rotate('+degree+'deg)',
+    });
+}
+
+
+$(document).ready(function() {
+    /*EYE MOVEMENT*/
+    $(document).mousemove(eye1Movement);
+    $(document).mousemove(eye2Movement);
     
     /*MENU*/
 
