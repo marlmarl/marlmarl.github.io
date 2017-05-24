@@ -248,19 +248,11 @@ section .container {
     padding: 0.5em 0.5em;
     text-decoration: none;
     font-size: 2vw;
-    font-family: 'Nixie One', cursive;
     font-family: 'Montseratt', sans-serif;
     font-weight:800;
 
 }
 
-.mainbutton a {
-    color:#ffffff;
-    font-family: 'Nixie One', cursive;
-    font-family: 'Montseratt', sans-serif;
-    font-weight:800;
-    
-}
 
 .mainbutton:hover {
     background-color:#717171;  
@@ -468,8 +460,6 @@ nav .flex-container {
 }
 
 
-.boxheart {}
-
 .arrow,
 .tolove {
     position:absolute;
@@ -500,9 +490,10 @@ nav .flex-container {
 }
 
 
-.boxmeetme button {
+.boxmeetme a {
     position:absolute;
     top:18%;
+    color:#ffffff;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
   
@@ -524,8 +515,8 @@ nav .flex-container {
     
 }
 
-.boxjob:hover ~ .boxmeetme button,
-.boxheart:hover ~ .boxmeetme button {
+.boxjob:hover ~ .boxmeetme a,
+.boxheart:hover ~ .boxmeetme a {
     animation-name:pulse;
     animation-duration:1.5s;
 }
