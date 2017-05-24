@@ -186,6 +186,15 @@ section .container {
         transparent 6px);
 }
 
+.striped-cover {
+    background: repeating-linear-gradient(
+        135deg,
+        #717171,
+        #717171 2px,
+        #ffffff 2px,
+        #ffffff 6px);
+}
+
 
 /*#####BOXES#####*/
 
@@ -462,20 +471,34 @@ nav .flex-container {
 
 .boxjob {
     background-color: #f8f8f8;
-    background: repeating-linear-gradient(
-        135deg,
-        #717171,
-        #717171 2px,
-        #ffffff 2px,
-        #ffffff 6px);
 }
 
 
+.boxheart {}
 
+.arrow,
+.tolove {
+    position:absolute;
+}
 
-.boxheart {
+.arrow {
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.arrow i {
+    color:#ffc857;
+    
+}
+
+.boxicon {
+    font-size:14vw;
+}
+
+.tolove {
     background-size:100% 100%;
     background-image: url("../img/heart.png");
+    transition: transform 1.5s;
 }
 
 .boxheart h2 {
@@ -484,6 +507,34 @@ nav .flex-container {
 
 .boxmeetme {
     background-color:transparent;
+}
+.boxmeetme button {
+    transition: transform 1.5s;
+}
+
+.boxjob:hover ~ .boxheart h2,
+.boxheart:hover .tolove h2{
+   display:none;
+    
+}
+
+.boxjob:hover ~ .boxheart .tolove,
+.boxheart:hover .tolove{
+    transform:translateY(-100%);
+    
+}
+.boxjob:hover ~ .boxheart .arrow,
+.boxheart:hover .arrow{
+   opacity:1;
+    
+}
+
+.boxjob:hover ~ .boxmeetme button,
+.boxheart:hover ~ .boxmeetme button{
+   /* animation-name:beating-heart;
+    animation-duration:1.5s;*/
+    transform:translateY(-50%)
+
 }
 
 /*
