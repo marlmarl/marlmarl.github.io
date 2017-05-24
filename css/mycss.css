@@ -244,7 +244,6 @@ section .container {
 .mainbutton {
     background-color: #1C1B20;
     border:none;
-    color:#ffffff;
     border-radius: 5px;
     padding: 0.5em 0.5em;
     text-decoration: none;
@@ -434,11 +433,6 @@ nav .flex-container {
     top:50%;
     left:25%;
     transform-origin:50% 0 0;
- /*   transform: rotate(210deg);
-    animation-name:rotate;
-    animation-duration:4s;
-    animation-iteration-count: infinite;*/
-
 }
 
 #eye1 {
@@ -502,15 +496,16 @@ nav .flex-container {
 }
 
 .boxheart h2 {
-    color:#ff5851
+    color:#ff5851;
 }
 
-.boxmeetme {
-    background-color:transparent;
-}
+
 .boxmeetme button {
-    transition: transform 1.5s;
+    position:absolute;
+    top:18%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+  
 
 .boxjob:hover ~ .boxheart h2,
 .boxheart:hover .tolove h2{
@@ -530,22 +525,12 @@ nav .flex-container {
 }
 
 .boxjob:hover ~ .boxmeetme button,
-.boxheart:hover ~ .boxmeetme button{
-   /* animation-name:beating-heart;
-    animation-duration:1.5s;*/
-    transform:translateY(-50%)
-
+.boxheart:hover ~ .boxmeetme button {
+    animation-name:pulse;
+    animation-duration:1.5s;
 }
 
-/*
-.boxheart:hover, 
-.boxjob:hover,
-.boxmeetme:hover {
-    z-index: 100;
-    animation-name: beating-heart;
-    animation-duration:1s;
-}
-*/
+
 
 
 /*---keyframes---*/
@@ -587,7 +572,7 @@ nav .flex-container {
 
 
 
-@keyframes beating-heart {
+@keyframes pulse {
     from {
 
         transform: scale3d(1, 1, 1);
