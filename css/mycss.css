@@ -506,9 +506,10 @@ nav .flex-container {
 
 .boxjob:hover ~ .boxheart .tolove,
 .boxheart:hover .tolove{
-    transform:translateY(-100%);
-    
+    box-shadow:none;
+    transform:translateY(-100%);  
 }
+
 .boxjob:hover ~ .boxheart .arrow,
 .boxheart:hover .arrow{
    opacity:1;
@@ -1199,6 +1200,11 @@ footer .section-header {
 
     .intro h2 {
         font-size:6vw;
+    }
+    
+    .boxjob:hover ~ .boxheart .tolove,
+    .boxheart:hover .tolove{
+    transform:translateX(-100%);  
     }
 
   
