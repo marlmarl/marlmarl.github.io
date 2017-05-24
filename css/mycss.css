@@ -595,12 +595,11 @@ nav .flex-container {
 /*#####ABOUT SECTION#####*/
 .boxabout {
     z-index:2;
-    transition: box-shadow 0.5s;
+    transition: box-shadow 0.3s;
     
 }
 
 .boxabout:hover {
-    /*transform: scale3d(1.00, 1.00, 0.95);*/
     box-shadow:none;
 }
 
@@ -839,6 +838,28 @@ svg .skill-header{
     mask: url(#mask4);
 }
 
+.skill-click-box {
+    position:absolute;
+    left:25%;
+    top:25%;
+    z-index:2;
+    border:none;
+    padding:0;
+    transition: box-shadow 0.3s;
+
+}
+
+.skill-click-box:hover {
+
+    background: repeating-linear-gradient(
+        135deg,
+        #1C1B20,
+        #1C1B20 2px,
+        transparent 2px,
+        transparent 6px);
+    box-shadow:none;
+}
+
 .skill-click-area {
     position:absolute;
     width:100%;
@@ -856,6 +877,7 @@ svg .skill-header{
         #1C1B20 2px,
         transparent 2px,
         transparent 6px);
+        box-shadow:none;
     
 }
 
@@ -864,25 +886,9 @@ svg .skill-header{
 }
 
 
-.skill-click-box {
-    position:absolute;
-    left:25%;
-    top:25%;
-    z-index:2;
-    border:none;
-    padding:0;
 
-}
 
-.skill-click-box:hover {
 
-    background: repeating-linear-gradient(
-        135deg,
-        #1C1B20,
-        #1C1B20 2px,
-        transparent 2px,
-        transparent 6px);
-}
 
 
 .skill-click-box i {
