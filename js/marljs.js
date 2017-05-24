@@ -44,16 +44,25 @@ $(document).ready(function() {
     $(document).mousemove(eye1Movement);
     $(document).mousemove(eye2Movement);
     
+
+
+    
+    
     /*INTRO HOVERS*/
     $('.boxjob').click(function(event){
-        $('.tolove').addClass('toloveup');
+        $('.tolove').addClass('tolovemove');
         $('.tolove > div').hide();
         $('.arrow').css("opacity", "1");
-        $('.boxmeetme > div > a').css({
-            '-webkit-transform': 'scale3d(1.05, 1.05, 1.05)',
-            '-moz-transform': 'scale3d(1.05, 1.05, 1.05)',
-            '-o-transform': 'scale3d(1.05, 1.05, 1.05)'});     
-    })
+        $('.boxmeetme > div > a').addClass('pulse'); 
+        ga('send', 'event', 'intro job','click', 'intro');
+    });
+    $('.boxheart').click(function(event){
+        $('.tolove').addClass('tolovemove');
+        $('.tolove > div').hide();
+        $('.arrow').css("opacity", "1");
+        $('.boxmeetme > div > a').addClass('pulse');
+        ga('send', 'event', 'intro heart','click', 'intro');
+            });
     
     /*MENU*/
 

@@ -239,6 +239,12 @@ section .container {
 }
 
 
+/*ANIMATION CLASSES*/
+
+.pulse {
+    animation-name:pulse;
+    animation-duration:1.5s;
+}
 
 /*#####buttons#####*/
 .mainbutton {
@@ -507,7 +513,7 @@ nav .flex-container {
     transition: transform 1.5s;
 }
   
-.toloveup {
+.tolovemove {
     box-shadow:none;
     transform:translateY(-100%);  
 }
@@ -1236,10 +1242,11 @@ footer .section-header {
         font-size:6vw;
     }
     
-    .boxjob:hover ~ .boxheart .tolove,
-    .boxheart:hover .tolove{
+    .tolovemove{
     transform:translateX(-100%);  
     }
+    
+    
 
   
 
