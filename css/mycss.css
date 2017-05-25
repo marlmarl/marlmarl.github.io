@@ -696,29 +696,40 @@ nav .flex-container {
     margin-top: 7.5vw;
 }
 
-.boxastronaut {
-    position:absolute;
-    z-index:100;
-    top:50%;
-    left:87.5%; 
-}
 
-.astronaut {
-    width:85%;
-    height:85%;
+.bike {
+    position:absolute;
+    top:37.5%;
+    left:75%;
     z-index:100;
-    top:40%;
-    left:80%;
-    background-image: url("../img/astronaut.png");
+    background-image: url("../img/bicycle.png");
+    background-size:95% 95%;
+    background-repeat: no-repeat;
+}
+.wheel {
+    position:absolute;
+    top:46%;
+    width:34%;
+    height:34%;
+    background-image: url("../img/wheel.png");
     background-size:100% 100%;
     animation-name:rotate;
     animation-duration:10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
-    
 }
 
-.astronaut:hover{
+.wheel1 {
+    left:1.5%;
+}
+
+.wheel2 {
+    top:46.5%;
+    right:1.5%;
+}
+
+
+.wheel:hover{
 
     animation-direction: reverse;
     }
@@ -1253,9 +1264,9 @@ footer .section-header {
         margin-top:0;
     }
     
-    .boxastronaut {
-        top:87.5%;
-        left:37.5%;
+    .bike {
+        top:75%;
+        left:25%;
     }
     
     .about-details-box {
