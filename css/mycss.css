@@ -202,21 +202,22 @@ section .container {
     width:15vw;
     height:15vw;
     position:relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    
 }
 
 .smallbox {
     width:7.5vw;
     height:7.5vw;
     position:relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .bigbox {
     width:30vw;
     height:30vw;
     position:relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .noshadow {
@@ -323,7 +324,7 @@ nav .flex-container {
 
 .main-nav li {
     width:20%;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 
@@ -509,13 +510,19 @@ nav .flex-container {
     position:absolute;
     top:18%;
     color:#ffffff;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     transition: transform 1.5s;
 }
   
 .tolovemove {
     box-shadow:none;
     transform:translateY(-100%);  
+}
+
+.boxjob:hover,
+.boxheart:hover {
+    animation-name:pulse;
+    animation-duration:0.7s;
 }
 
 
@@ -607,25 +614,9 @@ nav .flex-container {
     box-sizing:border-box;
     animation-name:downer;
     animation-duration:0.7s;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     z-index: 500;
 }
-
-/*
-.about-details {
-    display:none;
-    position:absolute;
-    bottom:0;
-    width:30vw;
-    height:37.5vw;
-    box-sizing:border-box;
-    animation-name:downer;
-    animation-duration:0.7s;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    z-index: 500;
-}
-*/
-
 
 
 
@@ -697,14 +688,20 @@ nav .flex-container {
 }
 
 
-.bike {
+.bikebox {
     position:absolute;
     top:37.5%;
     left:75%;
-    z-index:100;
+    z-index:1;
+}
+
+.bike {
     background-image: url("../img/bicycle.png");
     background-size:95% 95%;
     background-repeat: no-repeat;
+    z-index:100;
+    pointer-events: none;
+     
 }
 .wheel {
     position:absolute;
@@ -1254,17 +1251,15 @@ footer .section-header {
     transform:translateX(-100%);  
     }
     
-    
-
-  
-
 
 
     .lower {
         margin-top:0;
     }
     
-    .bike {
+
+    
+    .bikebox {
         top:75%;
         left:25%;
     }
