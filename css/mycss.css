@@ -703,7 +703,7 @@ nav .flex-container {
     pointer-events: none;
      
 }
-.wheel {
+.bikepart {
     position:absolute;
     top:46%;
     width:34%;
@@ -715,6 +715,13 @@ nav .flex-container {
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
 }
+
+.pedal {
+    left:33%;
+    background-image: url("../img/pedal.png");
+
+}
+
 
 .wheel1 {
     left:1.5%;
