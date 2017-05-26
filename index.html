@@ -152,7 +152,7 @@
                 <br>If you are viewing this site it's probably because your job offer caught my eye or I fall in love with your company and I'm wondering if that feeling could become mutual. Here you will find more about me and things I know and do. Who knows, maybe we can make something impressive together :)</p>
             </div>
             
-            <div class="flex-container">
+            <div class="flex-container"  id="about-me">
 
                 <div class="bigbox noshadow upper">
                     <div class="box striped-cover bikebox">
@@ -171,40 +171,51 @@
     
                     <div class="box noshadow myphoto">
                     </div>
-                    <div class="box boxabout red" id="about1">
-                        <div class="content-centered">
-                            <h3>my<br>experience</h3>
+                    <a href="#experience-details" id="about1">
+                        <div class="box boxabout red" >
+                            <div class="content-centered">
+                                <h3>my<br>experience</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="box boxabout blue" id="about2">
-                        <div class="content-centered">
-                            <h3>my<br>education</h3>
+                    </a>
+                    <a href="#education-details" id="about2">
+                        <div class="box boxabout blue" >
+                            <div class="content-centered">
+                                <h3>my<br>education</h3>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     <div class="box striped noshadow">
                     </div>
                 </div>
                 <div class="bigbox noshadow lower">
                     <div class="box striped noshadow">
                     </div>
-                    <div class="box boxabout grey" id="about3">
-                        <div class="content-centered" >
-                            <h3>my<br>passions</h3>
+                      <a href="#passions-details" id="about3">
+                        <div class="box boxabout grey" >
+                            <div class="content-centered">
+                                <h3>my<br>passions</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="box boxabout mustard" id="about4">
-                        <div class="content-centered">
-                            <h3>what am I<br>looking for?</h3>
+                    </a>
+                    <a href="#what-am-i-looking-for" id="about4">
+                        <div class="box boxabout mustard" >
+                            <div class="content-centered">
+                                 <h3>what am I<br>looking for?</h3>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+               
                     <div class="box striped noshadow">
                     </div>
                 </div>
                 
-                <div class="about-details" id="about1-details">
+                <div class="about-details" id="about1-details" id="experience-details">
                     <div class="content-centered">
                         <div class="about-details-box red">
-                            <button type="button" class="about-details-close" id="about1-close"><i class="fa fa-times bigicon"></i></button>
+                            <a class="about-details-close page-scroll" id="about1-close" href="#about-me">
+                                <i class="fa fa-times bigicon"></i>
+                            </a>
 
                             <h3 class="about-details-header">experience</h3>
                             <i class="about-details-icon fa fa-suitcase bigicon"></i>
@@ -213,10 +224,12 @@
                     </div>
                 </div>
                 
-                <div class="about-details blue" id="about2-details">
+                <div class="about-details blue" id="about2-details" id="education-details">>
                     <div class="content-centered">
                         <div class="about-details-box blue">
-                            <button type="button" class="about-details-close" id="about2-close"><i class="fa fa-times bigicon"></i></button>
+                            <a class="about-details-close page-scroll" id="about2-close" href="#about-me">
+                                <i class="fa fa-times bigicon"></i>
+                            </a>
 
                             <h3 class="about-details-header">education</h3>
                             <i class="about-details-icon fa fa-graduation-cap bigicon"></i>
@@ -226,10 +239,13 @@
                 </div>
                 
                 
-                <div class="about-details" id="about3-details">
+                <div class="about-details" id="about3-details" id="#what-am-i-looking-for">
                     <div class="content-centered">
                         <div class="about-details-box grey">
-                            <button type="button" class="about-details-close" id="about3-close"><i class="fa fa-times bigicon mustardtext"></i></button>
+                            <a class="about-details-close page-scroll" id="about3-close" href="#about-me">
+                                <i class="fa fa-times bigicon"></i>
+                            </a>
+
 
                             <h3 class="about-details-header">what do i like</h3>
                             <i class="about-details-icon fa fa-heart bigicon"></i>
@@ -241,10 +257,13 @@
                 
                 
 
-                <div class="about-details" id="about4-details">
+                <div class="about-details" id="about4-details" id="passions-details">
                     <div class="content-centered">
                         <div class="about-details-box mustard">
-                            <button type="button" class="about-details-close " id="about4-close"><i class="fa fa-times bigicon icon-align-right"></i></button>
+                            <a class="about-details-close page-scroll" id="about4-close" href="#about-me">
+                                <i class="fa fa-times bigicon"></i>
+                            </a>
+
 
                             <h3 class="about-details-header">what am I looking for?</h3>
                             <i class="about-details-icon fa fa-rocket bigicon"></i>
@@ -284,8 +303,7 @@
             </div>
             
             <div class="flex-container">
-
-
+               
                 <div class="bigbox noshadow" id="skill1">
                     <div class="skill-bg">
                     </div>
@@ -557,7 +575,7 @@
             </div>
             <div class="flex-container contact-details">
                 <div class="bigbox striped lower">
-                    <div class="box boxphone noshadow">
+                    <div class="box boxphone">
                         <div class="content-centered">
                             <div class="boxdial">
                             </div>

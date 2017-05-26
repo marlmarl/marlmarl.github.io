@@ -74,7 +74,10 @@ a img {
 	border: none;
 	}
 
-
+button {
+    border:none;
+    padding:0;
+}
 /*#####SITE LAYOUT#####*/
 
 
@@ -98,6 +101,10 @@ section .container {
     width:100%;
     background-color: #ffffff;
     padding-bottom:10%;
+}
+
+section .flex-container {
+    padding-top:7%;
 }
 
 
@@ -147,7 +154,7 @@ section .container {
     margin:0 auto;
     text-align:justify;
     padding-top:5%;
-    padding-bottom:5%;
+
 }
 
 
@@ -250,7 +257,6 @@ section .container {
 /*#####buttons#####*/
 .mainbutton {
     background-color: #1C1B20;
-    border:none;
     border-radius: 5px;
     padding: 0.5em 0.5em;
     text-decoration: none;
@@ -319,13 +325,36 @@ nav .flex-container {
     list-style-type: none;
     margin:0;
     padding:0;
-    overflow:hidden
+    overflow:hidden;
+    
+    
 }
 
 .main-nav li {
     width:20%;
+    animation-name:downer;
+    animation-duration:0.5s;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
+/*
+.main-nav li:nth-child(2) {
+    animation-delay: 0.2s;
+    
+}
+.main-nav li:nth-child(3) {
+    animation-delay: 0.4s;
+    
+}
+.main-nav li:nth-child(4) {
+    animation-delay: 0.6s;
+    
+}
+.main-nav li:nth-child(5) {
+    animation-delay: 0.8s;
+    
+}
+*/
 
 
 .main-nav li:last-child {
@@ -634,7 +663,7 @@ nav .flex-container {
 #about2-details .about-details-icon {
     color:#ffc857;
 }
-#about3-details button i  {
+#about3-details a #what-am-i-looking-fori  {
     color:#ffc857;
 }
 #about3-details .about-details-icon  {
@@ -663,11 +692,8 @@ nav .flex-container {
 }
 
 .about-details-close{
-    /*float:right;*/
     display:block;
     font-size:6vw;
-    border:none;
-    background:none;
     color:#717171;
 }
 
@@ -758,7 +784,6 @@ nav .flex-container {
 
 
 /*#####SKILLS SECTION#####*/
-
 
 
 
@@ -868,8 +893,6 @@ svg .skill-header{
     left:25%;
     top:25%;
     z-index:2;
-    border:none;
-    padding:0;
     transition: box-shadow 0.3s;
 
 }
@@ -890,8 +913,6 @@ svg .skill-header{
     width:100%;
     height:75%;
     background:none;
-    border:none;
-    padding:0;
     z-index:999;
 }
 
@@ -973,8 +994,6 @@ svg .skill-header{
     top:25%;
     background:transparent;
     z-index:100;
-    border:none;
-    padding:0;
 }
 
 .skill-close-box i {
