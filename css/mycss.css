@@ -494,6 +494,7 @@ nav .flex-container {
 
 .boxjob {
     background-color: #f8f8f8;
+    transition: box-shadow 0.3s;
 }
 
 
@@ -523,15 +524,20 @@ nav .flex-container {
     font-size:14vw;
 }
 
+.boxheart{
+    transition: box-shadow 0.3s;
+}
+
+.boxheart h2 {
+    color:#ff5851;
+}
+
 .tolove {
     background-size:100% 100%;
     background-image: url("../img/heart.png");
     transition: transform 1.5s;
 }
 
-.boxheart h2 {
-    color:#ff5851;
-}
 
 
 
@@ -550,8 +556,7 @@ nav .flex-container {
 
 .boxjob:hover,
 .boxheart:hover {
-    animation-name:pulse;
-    animation-duration:0.7s;
+    box-shadow:none;
 }
 
 
