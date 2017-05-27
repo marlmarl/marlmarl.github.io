@@ -1026,11 +1026,15 @@ svg .skill-header{
 
 /*#####SECTION CONTACT#####*/
 
+.phonebg,
 .boxphone {
     position:absolute;
     top:12.5%;
     left:75%;
     z-index:50;
+}
+
+.boxphone {
     background-size:100% 100%;
     background-repeat: no-repeat;
     background-image: url("../img/phone.png");
@@ -1054,6 +1058,23 @@ svg .skill-header{
     animation-direction: reverse;
 }
 
+.phonenumber,
+.email {
+    z-index:52;
+}
+
+
+
+.phonenumber-small {
+    z-index:2;
+    display:none;
+}
+
+.email-small {
+    z-index:2;
+    display:none;
+}
+
 .contact-details {
     height:100%;
     width:100%;
@@ -1069,13 +1090,7 @@ svg .skill-header{
     font-weight:500;
 }
 
-.phonenumber-small {
-    display:none;
-}
 
-.email-small {
-    display:none;
-}
 
 
 /*#####FOOTER#####*/
@@ -1337,11 +1352,23 @@ footer .section-header {
         left:50%;
     }
     
+    
+    .phonebg {
+        top:25%;
+        left:25%;
+        
+    }
     .boxphone {
         width:15vw;
         height:15vw;
         top:37.5%;
         left:37.5%;
+    }
+    
+
+    
+    .phonebg {
+        z-index:1;
     }
     
     .author p {
@@ -1481,8 +1508,7 @@ footer .section-header {
         height:22.5vw;
         top:37.5%;
         left:37.5%;
-    }
-    
+    }    
 }
 
 
