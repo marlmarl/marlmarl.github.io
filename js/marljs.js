@@ -147,33 +147,14 @@ $(document).ready(function() {
 
 
 
-    /*CLOSING ABOUT DETAILS CLICK OUTSIDE MODAL*/
+    /*CLOSING ABOUT DETAILS CLICK OUTSIDE DETAILS BOX*/
 
-    $("html").click(function(event) {
-        
-            if (($('#about1-details').is(":visible")) && ($(event.target).closest('#about1-details').length === 0) && ($(event.target).closest('#about1').length === 0)) {
-            $("#about1-details").hide();
-            ga('send', 'event', 'experience close outside window','click', 'about');
-            
-
-        }
-            if (($('#about2-details').is(":visible")) && ($(event.target).closest('#about2-details').length === 0) && ($(event.target).closest('#about2').length === 0)) {
-            $("#about2-details").hide();
-            ga('send', 'event', 'education close outside window','click', 'about');
-
-        }
-            if (($('#about3-details').is(":visible")) && ($(event.target).closest('#gabout3-details').length === 0) && ($(event.target).closest('#about3').length === 0)) {
-            $("#about3-details").hide();
-            ga('send', 'event', 'passions close outside window','click', 'about');
-
-        }
-            
-            if (($('#about4-details').is(":visible")) && ($(event.target).closest('#about4-details').length === 0) && ($(event.target).closest('#about4').length === 0)) {
-            $("#about4-details").hide();
-            ga('send', 'event', 'what am i close outside window','click', 'about');
-
+    $(".about-details").click(function(event) {
+        if ($(event.target).closest('.about-details-box').length === 0){
+            $(".about-details").hide();                   
         }
     });
+
     
     /*SKILL DETAILS*/
 
