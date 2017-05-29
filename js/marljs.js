@@ -213,9 +213,12 @@ $(document).ready(function() {
     })
     
     
-/*    COOKIE BANNER CLOSE*/
-     $('#cookie-banner-close').click(function(event){
+    /*    COOKIE BANNER CLOSE*/
+    $('#cookie-banner-close').click(function(event){
         $('.cookie-banner').hide();
+        ga('send', 'event', 'cookie banner closed','click', 'general');
+
+
      })
     
     

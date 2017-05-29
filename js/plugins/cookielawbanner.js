@@ -41,6 +41,7 @@ function eraseCookie(name) {
 if(checkCookie(window.cookieName) != window.cookieValue){
     $('.cookie-banner').show();
     createCookie(window.cookieName,window.cookieValue, window.cookieDuration);
+   
 }
 
 
