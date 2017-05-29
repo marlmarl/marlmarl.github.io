@@ -151,9 +151,14 @@ $(document).ready(function() {
 
     $(".about-details").click(function(event) {
         if ($(event.target).closest('.about-details-box').length === 0){
-            $(".about-details").hide();                   
+            $(".about-details").hide();  
+            //scrolling with page-scroll plugin code
+            $('html, body').stop().animate({
+            scrollTop: ($('#about-me').offset().top - 1)
+        }, 1250, 'easeInOutExpo');
         }
     });
+    
 
     
     /*SKILL DETAILS*/
