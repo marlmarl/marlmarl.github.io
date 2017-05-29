@@ -212,5 +212,12 @@ $(document).ready(function() {
         ga('send', 'event', 'other skills close','click', 'skills');
     })
     
+    
+/*    COOKIE BANNER CLOSE*/
+     $('#cookie-banner-close').click(function(event){
+        $('.cookie-banner').hide();
+     })
+    
+    
 });
 

@@ -1143,6 +1143,37 @@ footer .section-header {
 }
 
 
+/*COOKIE BANNER*/
+
+.cookie-banner {
+    display:none;
+    position:fixed;
+    bottom:0%;
+    right:0%;
+    z-index: 9999;
+    width:30%;
+
+}
+.cookie-banner-inner {
+    margin:2%;
+    display:flex;
+}
+.cookie-banner i {
+    align-self:center;
+
+}
+.cookie-banner p {
+    padding:2%;
+    font-size:10px;
+    align-self: center;
+   
+}
+
+.cookie-banner span {
+    font-weight: bold;
+    font-size:1.1em;
+}
+
 
 /*#####MEDIA QUERIES#####*/
 
@@ -1369,6 +1400,11 @@ footer .section-header {
     .disclaimer p {
         font-size:10px;
     }
+    
+    .cookie-banner {
+        width:80%;
+        left:10%;
+    }
 
 
 }
@@ -1506,7 +1542,19 @@ footer .section-header {
         top:37.5%;
         left:37.5%;
     }    
-}
+
+    .cookie-banner-inner {
+        flex-direction: column;
+    }
+    .cookie-banner i {
+        order: 1;
+        font-size:10vw;
+
+    }
+    .cookie-banner p {
+        order:2;
+        margin-top:0;
+    }
 
 
 
