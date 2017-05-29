@@ -127,12 +127,12 @@ $(document).ready(function() {
 
     $('#about3').click(function(event){
         $('#about3-details').show();
-        ga('send', 'event', 'passions details','click', 'about');
+        ga('send', 'event', 'after hours details','click', 'about');
     })
 
     $('#about3-close').click(function(event){
         $('#about3-details').hide();
-        ga('send', 'event', 'passions close','click', 'about');
+        ga('send', 'event', 'after hours close','click', 'about');
     })
 
     $('#about4').click(function(event){
