@@ -6,8 +6,7 @@ body {
     background-size: 150px 150px;
     background-position: 0 0, 75px 75px;
     background-attachment: fixed;
-
-    font-smooth: auto;
+    
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -55,36 +54,37 @@ a {
     font-family: 'Montseratt', sans-serif;
     text-decoration:none;
 }
-a:link {
-    
-	color:#1C1B20;
 
-	}
+a:link {
+    color:#1C1B20;
+}
+
 a:visited {
-	color:#1C1B20;
-	}
+    color:#1C1B20;
+}
+
 a:hover {
-	color:#1C1B20;
-	}
+    color:#1C1B20;
+}
+
 a:active {
-color:#1C1B20;
-	}
+    color:#1C1B20;
+}
 
 a img {
-	border: none;
-	}
+    border: none;
+}
 
 button {
     border:none;
     padding:0;
 }
+
+
 /*#####SITE LAYOUT#####*/
-
-
 header,
 section {
     min-height: 100vh;
-
 }
 
 
@@ -93,8 +93,6 @@ section {
     padding-top:5vw;
     margin-top:10%;
     margin-bottom:10%;
-    
-
 }
 
 section .container {
@@ -118,8 +116,7 @@ section .flex-container {
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
-    position:relative;
-  
+    position:relative; 
 }
 
 
@@ -134,7 +131,6 @@ section .flex-container {
 .skills .flex-container {
     justify-content: space-around;
 }
-
 
 
 .section-header {
@@ -156,7 +152,6 @@ section .flex-container {
     padding-top:5%;
 
 }
-
 
 
 /*#####COLORS#####*/
@@ -209,8 +204,7 @@ section .flex-container {
     width:15vw;
     height:15vw;
     position:relative;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);    
 }
 
 .smallbox {
@@ -254,7 +248,6 @@ section .flex-container {
     animation-duration:1.5s;
 }
 
-/*#####buttons#####*/
 .mainbutton {
     background-color: #1C1B20;
     border-radius: 5px;
@@ -263,23 +256,16 @@ section .flex-container {
     font-size: 2vw;
     font-family: 'Montseratt', sans-serif;
     font-weight:800;
-
 }
 
 
 .mainbutton:hover {
     background-color:#717171;  
     box-shadow: none;
-
-
 }
 
 
-
-
 /*#####HEADER#####*/
-
-
 
 /*navigation*/
 nav {
@@ -293,7 +279,6 @@ nav {
 nav .flex-container {
     width:100%;
     justify-content: space-between;
-
 }
 
 .menu, 
@@ -325,9 +310,7 @@ nav .flex-container {
     list-style-type: none;
     margin:0;
     padding:0;
-    overflow:hidden;
-    
-    
+    overflow:hidden; 
 }
 
 .main-nav li {
@@ -336,26 +319,6 @@ nav .flex-container {
     animation-duration:0.5s;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-
-/*
-.main-nav li:nth-child(2) {
-    animation-delay: 0.2s;
-    
-}
-.main-nav li:nth-child(3) {
-    animation-delay: 0.4s;
-    
-}
-.main-nav li:nth-child(4) {
-    animation-delay: 0.6s;
-    
-}
-.main-nav li:nth-child(5) {
-    animation-delay: 0.8s;
-    
-}
-*/
-
 
 .main-nav li:last-child {
     width:10%;
@@ -385,9 +348,7 @@ nav .flex-container {
     text-transform: uppercase;
     font-size:4vw;
 }
-.main-nav li:hover a .blabla {
-    display:block;
-}
+
 .main-nav li:hover a i{
     text-transform: uppercase;
     font-size:12vw;
@@ -431,17 +392,10 @@ nav .flex-container {
     animation-duration:2s;
 }
 
-
-
-
-
-
-
 .boxglasses {
     background-size:100% 50%;
     background-repeat: no-repeat;
     background-image: url("../img/nerdybb.png");
-
 }
 
 .eye {
@@ -450,10 +404,9 @@ nav .flex-container {
     width:20%;
     background-color:#ffffff;
     border-radius:50%;
-
 }
 
-.pupil{
+.pupil {
     position:absolute;
     height:50%;
     width:50%;
@@ -469,12 +422,12 @@ nav .flex-container {
     left:15%; 
 }
 
-#eye2{
+#eye2 {
     top:15%;
     right:15%; 
 }
 
-.boxglasses h2{
+.boxglasses h2 {
     color:#ffffff;
 }
 
@@ -497,7 +450,6 @@ nav .flex-container {
     transition: box-shadow 0.3s;
 }
 
-
 .arrow,
 .tolove {
     position:absolute;
@@ -509,8 +461,7 @@ nav .flex-container {
 }
 
 .arrow i {
-    color:#ffc857;
-    
+    color:#ffc857;    
 }
 
 .hand {
@@ -539,8 +490,6 @@ nav .flex-container {
 }
 
 
-
-
 .boxmeetme a {
     position:absolute;
     top:18%;
@@ -560,70 +509,10 @@ nav .flex-container {
 }
 
 
-
-/*---keyframes---*/
-
-@keyframes fromleft {
-    from {
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-
-    to {
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-
-@keyframes downer {
-    from {
-        transform: translate3d(0, -100%, 0);
-        visibility: visible;
-    }
-
-    to {
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-
-@keyframes liftmeup {
-    from {
-        visibility: hidden;
-        transform: translate3d(0, 100%, 0);
-    }
-
-    to {
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-
-
-@keyframes pulse {
-    from {
-
-        transform: scale3d(1, 1, 1);
-    }
-
-    50% {
-
-        transform: scale3d(1.05, 1.05, 1.05);
-
-    }
-
-    to {
-        transform: scale3d(1, 1, 1);
-    }
-}
-
-
-
 /*#####ABOUT SECTION#####*/
 .boxabout {
     z-index:2;
-    transition: box-shadow 0.3s;
-    
+    transition: box-shadow 0.3s;    
 }
 
 .boxabout:hover {
@@ -653,32 +542,26 @@ nav .flex-container {
 }
 
 
-
 .about h3,
 .about-details h3 {
     text-align: center;    
 }
-
-
-
 
 .about-details-box p {
 
     font-size:1.35vw;
     margin:5%;
     margin-right:5%;
-    text-align: center;
-    
+    text-align: center;    
 }
+
 .about-details i{
     text-align: right;
-     display:block;
+    display:block;
     color:#717171;
 }
 
 #about3-details i{
-    text-align: right;
-     display:block;
     color:#ffc857;
 }
 
@@ -690,15 +573,10 @@ nav .flex-container {
     margin-top:5%;
 }
 
-
-
-
-
 .about .bigbox {
     display:flex;
     flex-wrap:wrap;
 }
-
 
 .myphoto {
     background-image: url("../img/marl300.jpg");
@@ -708,7 +586,6 @@ nav .flex-container {
 .lower {
     margin-top: 7.5vw;
 }
-
 
 .bikebox {
     position:absolute;
@@ -722,9 +599,9 @@ nav .flex-container {
     background-size:95% 95%;
     background-repeat: no-repeat;
     z-index:100;
-    pointer-events: none;
-     
+    pointer-events: none;     
 }
+
 .bikepart {
     position:absolute;
     top:46%;
@@ -741,9 +618,7 @@ nav .flex-container {
 .pedal {
     left:33%;
     background-image: url("../img/pedal.png");
-
 }
-
 
 .wheel1 {
     left:1.5%;
@@ -755,33 +630,12 @@ nav .flex-container {
 }
 
 
-.wheel:hover{
-
+.bikepart:hover{
     animation-direction: reverse;
-    }
-
-
-
-
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg)
-  }
-  to {
-    transform: rotate(360deg)
-  }
 }
 
 
-
-
-
-
-
 /*#####SKILLS SECTION#####*/
-
-
 
 .skill-bg {
     position:absolute;
@@ -795,13 +649,7 @@ nav .flex-container {
     animation-name:code;
     animation-duration:25s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    
-}
-
-@keyframes code {
-	from { background-position: 0 0; }
-	to { background-position: 0 100%; }
+    animation-timing-function: linear;    
 }
 
 
@@ -822,10 +670,10 @@ nav .flex-container {
 }
 
 svg {
-
     width: 200%;
     height: inherit;
 }
+
 svg text {
 text-anchor: middle;
 }
@@ -846,11 +694,11 @@ svg .skill-header{
     fill: #ffc857;
     mask: url(#mask1);
 }
+
 #skill1 svg .white-rect {
     fill: #ffffff;
     mask: url(#mask1);
 }
-
 
 
 #skill2 svg .color-rect {
@@ -865,8 +713,7 @@ svg .skill-header{
 
 #skill3 svg .color-rect {
     fill: #b453b3;
-    mask: url(#mask3);
-    
+    mask: url(#mask3);    
 }
 
 #skill3 svg .white-rect {
@@ -890,11 +737,9 @@ svg .skill-header{
     top:25%;
     z-index:2;
     transition: box-shadow 0.3s;
-
 }
 
 .skill-click-box:hover {
-
     background: repeating-linear-gradient(
         135deg,
         #1C1B20,
@@ -920,18 +765,11 @@ svg .skill-header{
         transparent 2px,
         transparent 6px);
         box-shadow:none;
-    
 }
 
 .skill-click-area:hover ~ .skill-close-box i {
     color:#1C1B20;
 }
-
-
-
-
-
-
 
 .skill-click-box i {
     color:#717171;
@@ -942,9 +780,7 @@ svg .skill-header{
 }
 
 
-
 /*#####skill details#####*/
-
 
 .skill-details {
     display:none;
@@ -953,29 +789,18 @@ svg .skill-header{
 .skill-details .bigbox {
     position:relative;
 }
+
 .skill-list  {
     z-index: 50;
 }
+
 .skill-details .smallbox{
     position:absolute;
     left:50%;
     top:50%;
     animation-name:elevator;
     animation-duration:0.6s;
-    animation-timing-function: linear;
-    
-       
-}
-
-
-@keyframes elevator {
-    from {
-        top: 0;
-    }
-
-    to {
-        top: 50%;
-    }
+    animation-timing-function: linear;       
 }
 
 .skill-details .striped {
@@ -1002,9 +827,9 @@ svg .skill-header{
 
 
 .skill-list .content-centered {
-    align-items:flex-start;
-    
+    align-items:flex-start;    
 }
+
 .skill-list ul {
     font-family: 'Source Code Pro', monospace;
     font-size:1.2vw;
@@ -1038,11 +863,10 @@ svg .skill-header{
     background-size:100% 100%;
     background-repeat: no-repeat;
     background-image: url("../img/dial.png");
-     animation-name:phonedial;
+    animation-name:phonedial;
     animation-duration:2s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    
+    animation-timing-function: linear;    
 }
 
 .boxdial:hover {
@@ -1053,8 +877,6 @@ svg .skill-header{
 .email {
     z-index:52;
 }
-
-
 
 .phonenumber-small {
     z-index:2;
@@ -1082,8 +904,6 @@ svg .skill-header{
 }
 
 
-
-
 /*#####FOOTER#####*/
 
 footer .container {
@@ -1099,7 +919,6 @@ footer .flex-container {
     height:100%;
     align-items:center;
     flex-direction: column;
-
 }
 
 footer .section-header {
@@ -1123,25 +942,7 @@ footer .section-header {
     color:#717171;
     font-size:11px;
     text-align: center;
-    
 }
-
-/*#####ANIMATIONS#####*/
-
-
-@keyframes phonedial {
-  from {
-    transform: rotate(0deg)
-  }
-  20% {
-    transform: rotate(30deg)
-        
-  }
-    to{transform:(0deg)
-        
-    }
-}
-
 
 /*COOKIE BANNER*/
 
@@ -1175,22 +976,86 @@ footer .section-header {
 }
 
 
+/*#####ANIMATIONS#####*/
+/*---keyframes---*/
+
+@keyframes downer {
+    from {
+        transform: translate3d(0, -50%, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+@keyframes liftmeup {
+    from {
+        transform: translate3d(0, 50%, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes code {
+    from {
+        background-position: 0 0; 
+    }
+    to { 
+        background-position: 0 100%; 
+    }
+}
+
+@keyframes elevator {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 50%;
+    }
+}
+
+@keyframes phonedial {
+    from {
+        transform: rotate(0deg)
+    }
+    20% {
+        transform: rotate(30deg)
+
+    }
+    to {
+        transform: rotate(0deg)
+
+    }
+}
+
+
 /*#####MEDIA QUERIES#####*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width : 768px) {
     section {
@@ -1254,20 +1119,18 @@ footer .section-header {
     }
 
     .main-nav {
-
         flex-direction:column;
         background-color:#ffffff;
-
     }
+    
     .main-nav li {
         height:18%;
         width:100%;
-
     }
-    .main-nav li:last-child {
-    width:100%;
-}
 
+    .main-nav li:last-child {
+        width:100%;
+    }
 
     .main-nav a {
         font-size:6vw;
@@ -1275,18 +1138,12 @@ footer .section-header {
 
     .main-nav li:hover {
         height:28%;
-        width:100%;
-     
+        width:100%;     
     }
     
     .main-nav li:hover a{
         font-size:10vw;
     }
-
-    
-    
-
- 
 
     .intro {
         display: flex;
@@ -1299,7 +1156,6 @@ footer .section-header {
         width:60vw;
         flex-wrap:wrap;
         justify-content:center;
-
     }
 
     .hellobox {
@@ -1319,13 +1175,9 @@ footer .section-header {
     transform:translateX(-100%);  
     }
     
-
-
     .lower {
         margin-top:0;
     }
-    
-
     
     .bikebox {
         top:75%;
@@ -1340,15 +1192,15 @@ footer .section-header {
     .about-details p {
         font-size:2.5vw;
     }
+    
     .about-details img {
         height:6vw;
     }
     
-
-
     svg .skill-header{
         font-size: 12vw;
     }
+    
     .skill-list ul {
         font-size:2.5vw;
     }
@@ -1377,9 +1229,9 @@ footer .section-header {
     
     .phonebg {
         top:25%;
-        left:25%;
-        
+        left:25%;    
     }
+    
     .boxphone {
         width:15vw;
         height:15vw;
@@ -1405,11 +1257,7 @@ footer .section-header {
         width:80%;
         left:10%;
     }
-
-
 }
-
-
 
 
 @media only screen and (max-width : 480px) {
@@ -1417,11 +1265,12 @@ footer .section-header {
     .flex-container {
         width:100%;
     }
- 
+    
 
     h1 {
         font-size:25vw;
     }
+    
     h3 {
         font-size:7vw;
     }
@@ -1434,10 +1283,12 @@ footer .section-header {
         width:90vw;
         height:90vw;
     }
+    
     .box {
         width:45vw;
         height:45vw;
     }
+    
     .smallbox {
         width:22.5vw;
         height:22.5vw;
@@ -1466,8 +1317,7 @@ footer .section-header {
 
     .main-nav li:hover {
         height:28%;
-        width:100%;
-     
+        width:100%; 
     }
     
     .main-nav li:hover a{
@@ -1490,7 +1340,6 @@ footer .section-header {
     .hellobox {
         height:30vw;
     }
- 
 
     .intro h2 {
         font-size:9.5vw;
@@ -1503,28 +1352,24 @@ footer .section-header {
     .section-intro {
         width:90%;
     }
- 
 
     .about-details-box {
         width:90vw;
         height:100vw;
     }
-    
 
     .about-details p {
         font-size:3.3vw;
     }
-    
-      .about-details h3 {
+
+    .about-details h3 {
         font-size:5vw;
     }   
-    
+
     .about-details img {
-       height:8vw;
+        height:8vw;
     }
     
-
-
     svg .skill-header{
         font-size: 16vw;
     }
@@ -1546,17 +1391,14 @@ footer .section-header {
     .cookie-banner-inner {
         flex-direction: column;
     }
+    
     .cookie-banner i {
         order: 1;
         font-size:10vw;
-
     }
+    
     .cookie-banner p {
         order:2;
         margin-top:0;
     }
-
-
-
-
-
+}
