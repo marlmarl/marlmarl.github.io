@@ -39,13 +39,11 @@ function eye2Movement(evt) {
 }
 
 
+
 $(document).ready(function() {
     /*EYE MOVEMENT*/
     $(document).mousemove(eye1Movement);
     $(document).mousemove(eye2Movement);
-    
-
-
     
     
     /*INTRO HOVERS*/
@@ -220,7 +218,5 @@ $(document).ready(function() {
 
 
      })
-    
-    
 });
 

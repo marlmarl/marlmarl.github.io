@@ -336,20 +336,6 @@ section .flex-container {
     font-size:6vw;
 }
 
-
-/*ANIMATION CLASSES*/
-
-.pulse {
-    -webkit-animation-name:pulse;
-    -moz-animation-name:pulse;
-    -o-animation-name:pulse;
-    animation-name:pulse;
-    -webkit-animation-duration:1.5s;
-    -moz-animation-duration:1.5s;
-    -o-animation-duration:1.5s;
-    animation-duration:1.5s;
-}
-
 .mainbutton {
     background-color: #1C1B20;
     -webkit-border-radius: 5px;
@@ -371,6 +357,42 @@ section .flex-container {
 }
 
 
+/*ANIMATION CLASSES*/
+
+.pulse {
+    -webkit-animation-name:pulse;
+    -moz-animation-name:pulse;
+    -o-animation-name:pulse;
+    animation-name:pulse;
+    -webkit-animation-duration:1.5s;
+    -moz-animation-duration:1.5s;
+    -o-animation-duration:1.5s;
+    animation-duration:1.5s;
+}
+
+.downer {
+     -webkit-animation-name:downer;
+    -moz-animation-name:downer;
+    -o-animation-name:downer;
+    animation-name:downer;
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    -o-animation-duration:2s;
+    animation-duration:2s;
+}
+
+.liftmeup {
+    -webkit-animation-name:liftmeup;
+    -moz-animation-name:liftmeup;
+    -o-animation-name:liftmeup;
+    animation-name:liftmeup;
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    -o-animation-duration:2s;
+    animation-duration:2s;
+}
+
+
 /*#####HEADER#####*/
 
 /*navigation*/
@@ -379,7 +401,7 @@ nav {
     position:fixed;
     top:0;
     background-color:#ffffff;
-    z-index:1000;
+    z-index:999;
 }
 
 nav .flex-container {
@@ -537,30 +559,8 @@ nav .flex-container {
     margin-bottom:0;
 }
 
-
-.leftside {
-    -webkit-animation-name:downer;
-    -moz-animation-name:downer;
-    -o-animation-name:downer;
-    animation-name:downer;
-    -webkit-animation-duration:2s;
-    -moz-animation-duration:2s;
-    -o-animation-duration:2s;
-    animation-duration:2s;
-}
-
-.rightside {
-    -webkit-animation-name:liftmeup;
-    -moz-animation-name:liftmeup;
-    -o-animation-name:liftmeup;
-    animation-name:liftmeup;
-    -webkit-animation-duration:2s;
-    -moz-animation-duration:2s;
-    -o-animation-duration:2s;
-    animation-duration:2s;
-}
-
 .boxglasses {
+    background-color:#1C1B20;
     -webkit-background-size:100% 50%;
     -moz-background-size:100% 50%;
     -o-background-size:100% 50%;
@@ -568,6 +568,8 @@ nav .flex-container {
     background-repeat: no-repeat;
     background-image: url("../img/nerdybb.png");
 }
+
+
 
 .eye {
     position:absolute;
@@ -596,12 +598,14 @@ nav .flex-container {
     transform-origin:50% 0 0;
 }
 
-#eye1 {
+
+
+.lefteye {
     top:15%;
     left:15%; 
 }
 
-#eye2 {
+.righteye {
     top:15%;
     right:15%; 
 }
