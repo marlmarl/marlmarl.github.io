@@ -90,8 +90,22 @@ a img {
 button {
     border:none;
     padding:0;
+    margin:0;
+    background:none;
+    -webkit-appearance:none;
+    box-shadow:none;
+    cursor:pointer;
+    font-size:inherit;
+    display:inline;
 }
 
+
+button:active,
+button:hover,
+button:focus { 
+    color:#03678B; 
+    text-decoration:underline; 
+}
 
 /*#####SITE LAYOUT#####*/
 header,
@@ -648,11 +662,13 @@ nav .flex-container {
     -moz-transition: box-shadow 0.3s, -moz-box-shadow 0.3s;
     transition: box-shadow 0.3s;
     transition: box-shadow 0.3s, -webkit-box-shadow 0.3s, -moz-box-shadow 0.3s;
+    cursor: pointer;
 }
 
 .arrow,
 .tolove {
     position:absolute;
+    cursor: pointer;
 }
 
 .arrow {
