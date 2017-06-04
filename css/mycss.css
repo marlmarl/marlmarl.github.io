@@ -692,7 +692,7 @@ nav .flex-container {
     -moz-background-size:100% 100%;
     -o-background-size:100% 100%;
     background-size:100% 100%;
-    background-image: url("../img/hand2.png");
+    background-image: url("../img/hand.png");
     -webkit-transition: -webkit-transform 1.5s;
     transition: -webkit-transform 1.5s;
     -o-transition: -o-transform 1.5s;
