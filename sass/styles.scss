@@ -1,0 +1,83 @@
+//vars
+@import "helpers/variables";
+
+//placeholders
+@import "helpers/placeholders";
+
+%shadow {
+   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+   &:hover {
+      box-shadow:none;
+   }
+}
+
+//reset
+@import "base/reset";
+
+//body, typography, sections, containers
+@import "base/basics";
+
+//boxes, buttons, icons
+@import  "base/elements";
+
+
+/*ANIMATION CLASSES*/
+
+.pulse {
+   animation-name: pulse;
+   animation-duration: 1.5s;
+}
+
+.downer {
+   animation-name: downer;
+   animation-duration: 2s;
+}
+
+.liftmeup {
+   animation-name: liftmeup;
+   animation-duration: 2s;
+}
+
+
+/*##### HEADER #####*/
+
+//navigation
+@import  "partials/navigation";
+
+//intro with moving eyes
+@import  "partials/intro";
+
+
+/*##### SECTIONS#####*/
+
+//about section
+@import  "partials/about";
+
+//about section
+@import  "partials/skills";
+
+//contact section
+@import  "partials/contact";
+
+
+/*#####FOOTER#####*/
+@import  "partials/footer";
+
+
+/*COOKIE BANNER*/
+@import  "partials/cookie-banner";
+
+
+/*##### ANIMATIONS #####*/
+
+//keyframes
+@import  "base/keyframes";
+
+
+/*##### MEDIA QUERIES #####*/
+
+//tablet media queries
+@import  "media-queries/max768";
+
+//phone media queries
+@import  "media-queries/max480";

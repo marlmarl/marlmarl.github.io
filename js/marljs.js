@@ -26,7 +26,7 @@ function eye2Movement(evt) {
     var mouseX = evt.pageX;
     var mouseY = evt.pageY;
     var eye2CenterX = (eye2Offset.left) + (eye2.width() / 2);
-    var eye2CenterY = (eye2Offset.top) + (eye2.height() / 2);  
+    var eye2CenterY = (eye2Offset.top) + (eye2.height() / 2);
     var radians = Math.atan2(mouseX - eye2CenterX, mouseY -eye2CenterY);
     var degree = (radians * (180 / Math.PI) * -1);
     pupil2.css({
@@ -41,28 +41,28 @@ function eye2Movement(evt) {
 
 $(document).ready(function() {
 
-    
+
     /*EYE MOVEMENT*/
     $(document).mousemove(eye1Movement);
     $(document).mousemove(eye2Movement);
-    
-    
+
+
     /*INTRO HOVERS*/
     $('.boxjob').click(function(event){
         $('.tolove').addClass('tolovemove');
-        $('.tolove > div').hide();
-        $('.arrow').css("opacity", "1");
-        $('.boxmeetme > div > a').addClass('pulse'); 
+        $('.tolove > h2').hide();
+        $('.hand-container').css("opacity", "1");
+        $('.boxmeetme > div > a').addClass('pulse');
         ga('send', 'event', 'intro job','click', 'intro');
     });
     $('.boxheart').click(function(event){
         $('.tolove').addClass('tolovemove');
-        $('.tolove > div').hide();
-        $('.arrow').css("opacity", "1");
+        $('.tolove > h2').hide();
+        $('.hand-container').css("opacity", "1");
         $('.boxmeetme > div > a').addClass('pulse');
         ga('send', 'event', 'intro heart','click', 'intro');
             });
-    
+
     /*MENU*/
 
     $('#menu-open').click(function(event){
@@ -150,16 +150,16 @@ $(document).ready(function() {
 
     $(".about-details").click(function(event) {
         if ($(event.target).closest('.about-details-box').length === 0){
-            $(".about-details").hide();  
+            $(".about-details").hide();
             //scrolling with page-scroll plugin code
             $('html, body').stop().animate({
             scrollTop: ($('#about-me').offset().top - 1)
         }, 1250, 'easeInOutExpo');
         }
     });
-    
 
-    
+
+
     /*SKILL DETAILS*/
 
 
@@ -210,8 +210,8 @@ $(document).ready(function() {
         $('#skill4').show();
         ga('send', 'event', 'other skills close','click', 'skills');
     })
-    
-    
+
+
     /*    COOKIE BANNER CLOSE*/
     $('#cookie-banner-close').click(function(event){
         $('.cookie-banner').hide();
@@ -220,4 +220,3 @@ $(document).ready(function() {
 
      })
 });
-
