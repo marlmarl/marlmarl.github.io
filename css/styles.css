@@ -9,9 +9,14 @@ h5, a, .mainbutton, nav .flex-container .menu-hamburger, nav .main-nav-container
 
 .flex-container, nav .main-nav-container .main-nav li a, .intro-container .intro, .intro-container .intro .boxglasses .glasses-content {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .back-box, .skill-details .skill-close-box, nav .main-nav-container .main-nav, .skills .skill-click-box, .contact-details .bigbox, .cookie-banner {
@@ -32,18 +37,29 @@ h5, a, .mainbutton, nav .flex-container .menu-hamburger, nav .main-nav-container
 
 .box, .back-box, .skill-details .skill-close-box, .intro-container .intro .hellobox, .about-details .about-details-wrapper, .contact-container {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav .main-nav-container .main-nav li, .intro-container .intro .boxjob, .intro-container .intro .boxheart, .intro-container .intro .boxmeetme a, .about .boxabout, .about-details .about-details-wrapper .about-details-box, .bikebox, .bike, .skills .skill-click-box, .contact-details .phonebg, .phonenumber, .phonenumber-small, .email, .email-small {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 nav .main-nav-container .main-nav li:hover, .intro-container .intro .boxjob:hover, .intro-container .intro .boxheart:hover, .intro-container .intro .boxmeetme a:hover, .about .boxabout:hover, .about-details .about-details-wrapper .about-details-box:hover, .bikebox:hover, .bike:hover, .skills .skill-click-box:hover, .contact-details .phonebg:hover, .phonenumber:hover, .phonenumber-small:hover, .email:hover, .email-small:hover {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 button {
@@ -51,7 +67,8 @@ button {
   padding: 0;
   margin: 0;
   background: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   cursor: pointer;
   font-size: inherit;
   display: inline;
@@ -216,23 +233,30 @@ section .flex-container {
 
 .mainbutton:hover {
   background-color: #717171;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /*ANIMATION CLASSES*/
 .pulse {
-  animation-name: pulse;
-  animation-duration: 1.5s;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 .downer {
-  animation-name: downer;
-  animation-duration: 2s;
+  -webkit-animation-name: downer;
+          animation-name: downer;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .liftmeup {
-  animation-name: liftmeup;
-  animation-duration: 2s;
+  -webkit-animation-name: liftmeup;
+          animation-name: liftmeup;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 /*##### HEADER #####*/
@@ -246,13 +270,20 @@ nav {
 
 nav .flex-container {
   width: 100%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav .flex-container .menu, nav .flex-container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin: 1%;
 }
 
@@ -269,8 +300,11 @@ nav .flex-container .menu-hamburger {
 nav .main-nav-container .main-nav {
   height: 100vh;
   display: none;
-  justify-content: space-around;
-  align-items: stretch;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -279,8 +313,10 @@ nav .main-nav-container .main-nav {
 
 nav .main-nav-container .main-nav li {
   width: 20%;
-  animation-name: downer;
-  animation-duration: 0.5s;
+  -webkit-animation-name: downer;
+          animation-name: downer;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 nav .main-nav-container .main-nav li:first-child, nav .main-nav-container .main-nav li:last-child {
@@ -323,7 +359,10 @@ nav .main-nav-container .main-nav li a {
   text-decoration: none;
   font-size: 2vw;
   color: #1C1B20;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
@@ -374,7 +413,8 @@ nav .main-nav-container .main-nav li a {
   border-radius: 50%;
   top: 50%;
   left: 25%;
-  transform-origin: 50% 0 0;
+  -webkit-transform-origin: 50% 0 0;
+          transform-origin: 50% 0 0;
 }
 
 .intro-container .intro .boxglasses #eye1 {
@@ -392,7 +432,9 @@ nav .main-nav-container .main-nav li a {
   bottom: 0;
   right: 0;
   left: 0;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .intro-container .intro .boxglasses .glasses-content h2 {
@@ -401,21 +443,19 @@ nav .main-nav-container .main-nav li a {
 
 .intro-container .intro .boxjob {
   background-color: #f8f8f8;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
   cursor: pointer;
 }
 
-.intro-container .intro .boxjob:hover {
-  box-shadow: none;
-}
-
 .intro-container .intro .boxheart {
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
   display: block;
-}
-
-.intro-container .intro .boxheart:hover {
-  box-shadow: none;
 }
 
 .intro-container .intro .boxheart .hand-container, .intro-container .intro .boxheart .tolove {
@@ -425,19 +465,26 @@ nav .main-nav-container .main-nav li a {
 
 .intro-container .intro .boxheart .hand-container {
   opacity: 0;
+  -webkit-transition: opacity 1.5s;
   transition: opacity 1.5s;
 }
 
 .intro-container .intro .boxheart .hand-container .hand {
   background-size: 100% 100%;
   background-image: url("../img/hand.png");
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
   transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
 }
 
 .intro-container .intro .boxheart .tolove {
   background-size: 100% 100%;
   background-image: url("../img/heart.png");
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
   transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
 }
 
 .intro-container .intro .boxheart .tolove h2 {
@@ -448,12 +495,17 @@ nav .main-nav-container .main-nav li a {
   position: absolute;
   top: 18%;
   color: #ffffff;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
   transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
 }
 
 .intro-container .tolovemove {
-  box-shadow: none;
-  transform: translateY(-100%);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 /*##### SECTIONS#####*/
@@ -463,13 +515,19 @@ nav .main-nav-container .main-nav li a {
 }
 
 .about .bigbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .about .boxabout {
   z-index: 2;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
 }
 
 .about .upper .myphoto {
@@ -507,9 +565,12 @@ nav .main-nav-container .main-nav li a {
 .about-details .about-details-wrapper .about-details-box {
   width: 40vw;
   height: 40vw;
-  box-sizing: border-box;
-  animation-name: downer;
-  animation-duration: 0.7s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-animation-name: downer;
+          animation-name: downer;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
   z-index: 500;
 }
 
@@ -561,7 +622,8 @@ nav .main-nav-container .main-nav li a {
 }
 
 .bike {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background-image: url("../img/bicycle.png");
   background-size: 95% 95%;
   background-repeat: no-repeat;
@@ -576,10 +638,14 @@ nav .main-nav-container .main-nav li a {
   height: 34%;
   background-image: url("../img/wheel.png");
   background-size: 100% 100%;
-  animation-name: rotate;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 .bike .pedal {
@@ -601,15 +667,20 @@ nav .main-nav-container .main-nav li a {
   position: absolute;
   width: 100%;
   height: 50%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 4px solid #ffffff;
   background-position: 0px 0px;
   background-size: auto;
   background-repeat: repeat-y;
-  animation-name: code;
-  animation-duration: 25s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation-name: code;
+          animation-name: code;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 /*---separate skills---*/
@@ -618,7 +689,8 @@ nav .main-nav-container .main-nav li a {
 }
 
 .skills .flex-container {
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .skills .skill-click-area {
@@ -638,7 +710,10 @@ nav .main-nav-container .main-nav li a {
   left: 25%;
   top: 25%;
   z-index: 2;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
 }
 
 .skills .skill-click-box i {
@@ -684,42 +759,50 @@ svg .skill-header {
 
 #skill1 svg .color-rect {
   fill: #ffc857;
-  mask: url(#mask1);
+  -webkit-mask: url(#mask1);
+          mask: url(#mask1);
 }
 
 #skill1 svg .white-rect {
   fill: #ffffff;
-  mask: url(#mask1);
+  -webkit-mask: url(#mask1);
+          mask: url(#mask1);
 }
 
 #skill2 svg .color-rect {
   fill: #ff5851;
-  mask: url(#mask2);
+  -webkit-mask: url(#mask2);
+          mask: url(#mask2);
 }
 
 #skill2 svg .white-rect {
   fill: #ffffff;
-  mask: url(#mask2);
+  -webkit-mask: url(#mask2);
+          mask: url(#mask2);
 }
 
 #skill3 svg .color-rect {
   fill: #b453b3;
-  mask: url(#mask3);
+  -webkit-mask: url(#mask3);
+          mask: url(#mask3);
 }
 
 #skill3 svg .white-rect {
   fill: #ffffff;
-  mask: url(#mask3);
+  -webkit-mask: url(#mask3);
+          mask: url(#mask3);
 }
 
 #skill4 svg .color-rect {
   fill: #00cecb;
-  mask: url(#mask4);
+  -webkit-mask: url(#mask4);
+          mask: url(#mask4);
 }
 
 #skill4 svg .white-rect {
   fill: #ffffff;
-  mask: url(#mask4);
+  -webkit-mask: url(#mask4);
+          mask: url(#mask4);
 }
 
 /*#####skill details#####*/
@@ -729,7 +812,9 @@ svg .skill-header {
 
 .skill-details .skill-list {
   z-index: 50;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .skill-details .skill-list ul {
@@ -746,9 +831,12 @@ svg .skill-header {
   position: absolute;
   left: 50%;
   top: 50%;
-  animation-name: elevator;
-  animation-duration: 0.6s;
-  animation-timing-function: linear;
+  -webkit-animation-name: elevator;
+          animation-name: elevator;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 .skill-details .back-box, .skill-details .skill-close-box {
@@ -837,14 +925,19 @@ svg .skill-header {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-image: url("../img/dial.png");
-  animation-name: phonedial;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation-name: phonedial;
+          animation-name: phonedial;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 .contact-details .boxphone .boxdial:hover {
-  animation-direction: reverse;
+  -webkit-animation-direction: reverse;
+          animation-direction: reverse;
 }
 
 .phonenumber, .phonenumber-small {
@@ -884,8 +977,13 @@ footer .container {
 footer .container .flex-container {
   width: 90%;
   height: 100%;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .author {
@@ -918,18 +1016,22 @@ footer .container .flex-container {
 
 .cookie-banner .cookie-banner-inner {
   margin: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #ffc857;
 }
 
 .cookie-banner .cookie-banner-inner i {
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .cookie-banner .cookie-banner-inner p {
   padding: 2%;
   font-size: 10px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .cookie-banner .cookie-banner-inner span {
@@ -939,42 +1041,107 @@ footer .container .flex-container {
 
 /*##### ANIMATIONS #####*/
 /*---keyframes---*/
-@keyframes downer {
+@-webkit-keyframes downer {
   from {
-    transform: translate3d(0, -50%, 0);
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
   }
   to {
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes downer {
+  from {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes liftmeup {
+  from {
+    -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes liftmeup {
   from {
-    transform: translate3d(0, 50%, 0);
+    -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
   }
   to {
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
   }
 }
 
 @keyframes pulse {
   from {
-    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
   }
   50% {
-    transform: scale3d(1.05, 1.05, 1.05);
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
   }
   to {
-    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes rotate {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes code {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
   }
 }
 
@@ -987,6 +1154,15 @@ footer .container .flex-container {
   }
 }
 
+@-webkit-keyframes elevator {
+  from {
+    top: 0;
+  }
+  to {
+    top: 50%;
+  }
+}
+
 @keyframes elevator {
   from {
     top: 0;
@@ -996,15 +1172,33 @@ footer .container .flex-container {
   }
 }
 
-@keyframes phonedial {
+@-webkit-keyframes phonedial {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   20% {
-    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
   }
   to {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes phonedial {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
@@ -1054,7 +1248,10 @@ footer .container .flex-container {
     height: 95%;
   }
   nav .main-nav-container .main-nav {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #ffffff;
   }
   nav .main-nav-container .main-nav li {
@@ -1075,9 +1272,16 @@ footer .container .flex-container {
     font-size: 6vw;
   }
   .intro-container .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 12vw;
     padding-top: 8vw;
     height: 100%;
@@ -1089,13 +1293,19 @@ footer .container .flex-container {
     font-size: 6vw;
   }
   .intro-container .intro .rightside {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 60vw;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .intro-container .intro .tolovemove {
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   .about-details .about-details-wrapper .about-details-box {
     width: 80vw;
@@ -1135,10 +1345,14 @@ footer .container .flex-container {
     display: none;
   }
   .phonenumber-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
   }
   .email-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     top: 50%;
@@ -1253,14 +1467,21 @@ footer .container .flex-container {
     left: 37.5%;
   }
   .cookie-banner .cookie-banner-inner {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .cookie-banner .cookie-banner-inner i {
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     font-size: 10vw;
   }
   .cookie-banner .cookie-banner-inner p {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
     margin-top: 0;
   }
 }
