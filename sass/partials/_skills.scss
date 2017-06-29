@@ -152,6 +152,7 @@ svg .skill-header {
     .skill-list {
         z-index: 50;
         align-items: flex-start;
+       box-shadow: $shadow;
 
         ul {
             font-family: 'Source Code Pro', monospace;

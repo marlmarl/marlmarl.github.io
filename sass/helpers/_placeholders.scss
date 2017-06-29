@@ -1,3 +1,4 @@
+
 %elements-font {
    font-family: 'Montseratt', sans-serif;
    font-weight: 800;
@@ -8,6 +9,13 @@
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
+}
+
+%shadow {
+   box-shadow: $shadow;
+   &:hover {
+      box-shadow:none;
+   }
 }
 
 %striped {

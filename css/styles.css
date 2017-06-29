@@ -19,6 +19,16 @@ h5, a, .mainbutton, nav .flex-container .menu-hamburger, nav .main-nav-container
       flex-wrap: wrap;
 }
 
+nav .main-nav-container .main-nav li, .intro-container .intro .boxjob, .intro-container .intro .boxheart, .intro-container .intro .boxmeetme a, .about .boxabout, .about-details .about-details-wrapper .about-details-box, .skills .skill-click-box, .contact-details .phonebg, .phonenumber, .phonenumber-small, .email, .email-small {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+nav .main-nav-container .main-nav li:hover, .intro-container .intro .boxjob:hover, .intro-container .intro .boxheart:hover, .intro-container .intro .boxmeetme a:hover, .about .boxabout:hover, .about-details .about-details-wrapper .about-details-box:hover, .skills .skill-click-box:hover, .contact-details .phonebg:hover, .phonenumber:hover, .phonenumber-small:hover, .email:hover, .email-small:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .back-box, .skill-details .skill-close-box, nav .main-nav-container .main-nav, .skills .skill-click-box, .contact-details .bigbox, .cookie-banner {
   background-color: #f8f8f8;
   background: -webkit-repeating-linear-gradient(315deg, #717171, #717171 2px, transparent 2px, transparent 6px);
@@ -50,16 +60,6 @@ h5, a, .mainbutton, nav .flex-container .menu-hamburger, nav .main-nav-container
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-nav .main-nav-container .main-nav li, .intro-container .intro .boxjob, .intro-container .intro .boxheart, .intro-container .intro .boxmeetme a, .about .boxabout, .about-details .about-details-wrapper .about-details-box, .bikebox, .bike, .skills .skill-click-box, .contact-details .phonebg, .phonenumber, .phonenumber-small, .email, .email-small {
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-nav .main-nav-container .main-nav li:hover, .intro-container .intro .boxjob:hover, .intro-container .intro .boxheart:hover, .intro-container .intro .boxmeetme a:hover, .about .boxabout:hover, .about-details .about-details-wrapper .about-details-box:hover, .bikebox:hover, .bike:hover, .skills .skill-click-box:hover, .contact-details .phonebg:hover, .phonenumber:hover, .phonenumber-small:hover, .email:hover, .email-small:hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 button {
@@ -615,6 +615,8 @@ nav .main-nav-container .main-nav li a {
 }
 
 .bikebox, .bike {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: absolute;
   top: 37.5%;
   left: 75%;
@@ -815,6 +817,8 @@ svg .skill-header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .skill-details .skill-list ul {
