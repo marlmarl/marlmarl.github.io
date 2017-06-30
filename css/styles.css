@@ -73,6 +73,28 @@ nav .main-nav-container .main-nav li:hover, .intro-container .intro .boxjob:hove
   align-items: center;
 }
 
+.intro-container .intro .leftside {
+  -webkit-animation-name: downer;
+  animation-name: downer;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.intro-container .intro .rightside {
+  -webkit-animation-name: liftmeup;
+  animation-name: liftmeup;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+/*ANIMATION CLASSES*/
+.liftmeup {
+  -webkit-animation-name: liftmeup;
+  animation-name: liftmeup;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+}
+
 button {
   border: none;
   padding: 0;
@@ -248,28 +270,6 @@ section .flex-container {
   background-color: #717171;
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-
-/*ANIMATION CLASSES*/
-.pulse {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-}
-
-.downer {
-  -webkit-animation-name: downer;
-  animation-name: downer;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-}
-
-.liftmeup {
-  -webkit-animation-name: liftmeup;
-  animation-name: liftmeup;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
 }
 
 /*##### HEADER #####*/
@@ -567,19 +567,19 @@ nav .main-nav-container .main-nav li a {
   background-size: 100% 100%;
 }
 
-.about .upper #about1 .boxabout {
+.about .upper #experience .boxabout {
   background-color: #ff5851;
 }
 
-.about .upper #about2 .boxabout {
+.about .upper #education .boxabout {
   background-color: #00cecb;
 }
 
-.about .lower #about3 .boxabout {
+.about .lower #after-hours .boxabout {
   background-color: #717171;
 }
 
-.about .lower #about4 .boxabout {
+.about .lower #looking-for .boxabout {
   background-color: #ffc857;
 }
 
@@ -626,23 +626,23 @@ nav .main-nav-container .main-nav li a {
   text-align: center;
 }
 
-#about1-details .about-details-box {
+#experience-details .about-details-box {
   background-color: #ff5851;
 }
 
-#about2-details .about-details-box {
+#education-details .about-details-box {
   background-color: #00cecb;
 }
 
-#about3-details i {
+#after-hours-details i {
   color: #ffc857;
 }
 
-#about3-details .about-details-box {
+#after-hours-details .about-details-box {
   background-color: #717171;
 }
 
-#about4-details .about-details-box {
+#looking-for-details .about-details-box {
   background-color: #ffc857;
 }
 

@@ -23,21 +23,21 @@
          background-size: 100% 100%;
       }
 
-      #about1 .boxabout {
+      #experience .boxabout {
          background-color: $red;
       }
 
-      #about2 .boxabout {
+      #education .boxabout {
          background-color: $blue;
       }
    }
 
    .lower {
-      #about3 .boxabout {
+      #after-hours .boxabout {
          background-color: $grey;
       }
 
-      #about4 .boxabout {
+      #looking-for .boxabout {
          background-color: $mustard;
       }
    }
@@ -91,15 +91,15 @@
    }
 }
 
-#about1-details .about-details-box{
+#experience-details .about-details-box{
    background-color: $red;
 }
 
-#about2-details .about-details-box{
+#education-details .about-details-box{
    background-color: $blue;
 }
 
-#about3-details {
+#after-hours-details{
    i {
       color: #ffc857;
    }
@@ -109,7 +109,7 @@
    }
 
 }
-#about4-details .about-details-box{
+#looking-for-details .about-details-box{
    background-color: $mustard;
 }
 

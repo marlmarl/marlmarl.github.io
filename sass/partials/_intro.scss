@@ -5,6 +5,12 @@
    .intro {
       @extend %flex-center;
       padding: 6vw 0;
+      .leftside {
+         @extend %downer2;
+      }
+      .rightside {
+         @extend %liftmeup2;
+      }
 
       .hellobox {
          @extend %content-centered;

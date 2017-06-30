@@ -63,6 +63,7 @@ $(document).ready(function() {
         ga('send', 'event', 'intro heart','click', 'intro');
             });
 
+
     /*MENU*/
 
     $('#menu-open').click(function(event){
@@ -104,59 +105,38 @@ $(document).ready(function() {
 
     /*ABOUT DETAILS*/
 
-    $('#about1').click(function(event){
-        $('#about1-details').show();
-        ga('send', 'event', 'experience details','click', 'about');
-    })
+    //opening about modals
+    $('#about-me').on('click', '.about-box', function(e){
+      e.preventDefault();
+      var $aboutDetails = $(this).next('.about-details')
+      $aboutDetails.show();
+      $aboutDetailsId = $aboutDetails.attr('id');
+      ga('send', 'event', $aboutDetailsId,'click', 'about');
 
-    $('#about1-close').click(function(event){
-        $('#about1-details').hide();
-        ga('send', 'event', 'experience close','click', 'about');
-    })
+   })
+   //closing about modals
+   $('#about-me').on('click', '.about-details-close', function(e){
+      e.preventDefault();
+      $(this)
+         .closest('.about-details')
+         .not(':animated')
+         .hide();
+      ga('send', 'event', 'about modal close','click', 'about');
+   })
 
-    $('#about2').click(function(event){
-        $('#about2-details').show();
-        ga('send', 'event', 'education details','click', 'about');
-    })
-
-    $('#about2-close').click(function(event){
-        $('#about2-details').hide();
-        ga('send', 'event', 'education close','click', 'about');
-    })
-
-    $('#about3').click(function(event){
-        $('#about3-details').show();
-        ga('send', 'event', 'after hours details','click', 'about');
-    })
-
-    $('#about3-close').click(function(event){
-        $('#about3-details').hide();
-        ga('send', 'event', 'after hours close','click', 'about');
-    })
-
-    $('#about4').click(function(event){
-        $('#about4-details').show();
-        ga('send', 'event', 'what am i looking for','click', 'about');
-    })
-
-    $('#about4-close').click(function(event){
-        $('#about4-details').hide();
-        ga('send', 'event', 'what am i looking close','click', 'about');
-    })
+//closing modals by clicking outside the box
+$(".about-details").on('click', function(e) {
+     if ($(e.target).closest('.about-details-box').length === 0){
+        $(".about-details").slideUp();
+        //scrolling with page-scroll plugin code
+        $('html, body').stop().animate({
+        scrollTop: ($('#about-me').offset().top - 1)
+     }, 1250, 'easeInOutExpo');
+     ga('send', 'event', 'about modal close outside modal','click', 'about');
+     }
+});
 
 
-
-    /*CLOSING ABOUT DETAILS CLICK OUTSIDE DETAILS BOX*/
-
-    $(".about-details").click(function(event) {
-        if ($(event.target).closest('.about-details-box').length === 0){
-            $(".about-details").hide();
-            //scrolling with page-scroll plugin code
-            $('html, body').stop().animate({
-            scrollTop: ($('#about-me').offset().top - 1)
-        }, 1250, 'easeInOutExpo');
-        }
-    });
 
 
 
