@@ -2,7 +2,7 @@ h1,
 h2,
 h3,
 h4,
-h5, a, .mainbutton, nav .flex-container .menu-hamburger, nav .main-nav-container .main-nav li a, .intro-container .intro h2, svg .skill-header {
+h5, a, .mainbutton, nav #mini-nav .menu-hamburger, nav .main-nav-container .main-nav li a, .intro-container .intro h2, svg .skill-header {
   font-family: 'Montseratt', sans-serif;
   font-weight: 800;
 }
@@ -281,7 +281,7 @@ nav {
   z-index: 999;
 }
 
-nav .flex-container {
+nav #mini-nav {
   width: 100%;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -289,7 +289,7 @@ nav .flex-container {
   justify-content: space-between;
 }
 
-nav .flex-container .menu, nav .flex-container .logo {
+nav #mini-nav .menu, nav #mini-nav .logo {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -304,13 +304,13 @@ nav .flex-container .menu, nav .flex-container .logo {
   margin: 1%;
 }
 
-nav .flex-container .logo a {
+nav #mini-nav .logo a {
   font-family: 'Fascinate', cursive;
   font-size: 2.5vw;
   text-decoration: none;
 }
 
-nav .flex-container .menu-hamburger {
+nav #mini-nav .menu-hamburger {
   font-size: 2vw;
 }
 

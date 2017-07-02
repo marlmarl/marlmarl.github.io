@@ -46,6 +46,33 @@ $(document).ready(function() {
    $(document).mousemove(eye1Movement);
    $(document).mousemove(eye2Movement);
 
+   /*NAVIGATION*/
+
+   $('#menu-open').click(function(e){
+      e.preventDefault();
+      $('#mini-nav').hide();
+      $('#main-nav').css("display", "flex");
+      ga('send', 'event', 'menu open','click', 'menu');
+   })
+
+   $('#menu-close').click(function(e){
+      e.preventDefault();
+      $('#main-nav').hide();
+      $('#mini-nav').show();
+      ga('send', 'event', 'menu close','click', 'menu');
+   })
+
+   //opening menu items
+   $('#main-nav').on('click', '.menu-item', function(e){
+      $('#main-nav').hide();
+      $('#mini-nav').show();
+      var $menuItemuClicked = $(this).find('.menu-item')
+      var $menuItemLink = $menuItemCLicked.find('a');
+      var $menuItemDestination = $menuItemLink.attr('href');
+      ga('send', 'event', $menuItemDestination,'click', 'menu');
+   })
+
+
 
    /*INTRO HOVERS*/
    $('.boxjob').click(function(event){
@@ -64,44 +91,18 @@ $(document).ready(function() {
    });
 
 
-   /*MENU*/
+   /*ABOUT SECTION*/
 
-   $('#menu-open').click(function(event){
-      $('#mini-nav').hide();
-      $('#main-nav').css("display", "flex");
-      ga('send', 'event', 'menu open','click', 'menu');
+   //opening about modals
+   $('#about-me').on('click', '.about-box', function(e){
+      e.preventDefault();
+      var $aboutDetails = $(this).next('.about-details')
+      $aboutDetails.show();
+      $aboutDetailsId = $aboutDetails.attr('id');
+      ga('send', 'event', $aboutDetailsId,'click', 'about');
+
    })
 
-   $('#menu-close').click(function(event){
-      $('#main-nav').hide();
-      $('#mini-nav').show();
-      ga('send', 'event', 'menu close','click', 'menu');
-   })
-
-   $('#home-open').click(function(event){
-      $('#main-nav').hide();
-      $('#mini-nav').show();
-      ga('send', 'event', 'from menu to home','click', 'menu');
-   })
-
-   $('#about-open').click(function(event){
-      $('#main-nav').hide();
-      $('#mini-nav').show();
-      ga('send', 'event', 'from menu to about','click', 'menu');
-   })
-
-   $('#skills-open').click(function(event){
-      $('#main-nav').hide();
-      $('#mini-nav').show();
-      ga('send', 'event', 'from menu to skills','click', 'menu');
-   })
-
-
-   $('#contact-open').click(function(event){
-      $('#main-nav').hide();
-      $('#mini-nav').show();
-      ga('send', 'event', 'from menu to contact','click', 'menu');
-   })
 
    /*ABOUT DETAILS*/
 
@@ -165,7 +166,6 @@ $(document).ready(function() {
       .prev('.skill')
       .show();
       ga('send', 'event', 'skill close','click', 'skills');
-
    });
 
 
@@ -175,7 +175,5 @@ $(document).ready(function() {
    $('#cookie-banner-close').click(function(event){
       $('.cookie-banner').hide();
       ga('send', 'event', 'cookie banner closed','click', 'general');
-
-
    })
 });

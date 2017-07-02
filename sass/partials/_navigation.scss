@@ -5,7 +5,7 @@ nav {
    background-color: #ffffff;
    z-index: 999;
 
-   .flex-container {
+   #mini-nav {
       width: 100%;
       justify-content: space-between;
 
@@ -27,7 +27,6 @@ nav {
          font-size: 2vw;
 
       }
-
    }
 
    .main-nav-container {
