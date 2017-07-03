@@ -91,19 +91,6 @@ $(document).ready(function() {
    });
 
 
-   /*ABOUT SECTION*/
-
-   //opening about modals
-   $('#about-me').on('click', '.about-box', function(e){
-      e.preventDefault();
-      var $aboutDetails = $(this).next('.about-details')
-      $aboutDetails.show();
-      $aboutDetailsId = $aboutDetails.attr('id');
-      ga('send', 'event', $aboutDetailsId,'click', 'about');
-
-   })
-
-
    /*ABOUT DETAILS*/
 
    //opening about modals
@@ -111,7 +98,7 @@ $(document).ready(function() {
       e.preventDefault();
       var $aboutDetails = $(this).next('.about-details')
       $aboutDetails.show();
-      $aboutDetailsId = $aboutDetails.attr('id');
+      var $aboutDetailsId = $aboutDetails.attr('id');
       ga('send', 'event', $aboutDetailsId,'click', 'about');
 
    })
