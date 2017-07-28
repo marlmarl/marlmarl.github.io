@@ -86,7 +86,7 @@ $(document).ready(function() {
       $('.tolove').addClass('tolovemove');
       $('.tolove > h2').hide();
       $('.hand-container').css("opacity", "1");
-      $('.boxmeetme > div > a').addClass('pulse');
+      //$('.boxmeetme > div > a').addClass('pulse');
       ga('send', 'event', 'intro heart','click', 'intro');
    });
 

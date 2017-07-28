@@ -121,10 +121,11 @@
          }
 
       }
+
       .boxmeetme {
          a {
-            position: absolute;
-            top: 18%;
+            position: relative;
+            bottom: 22%;
             color: #ffffff;
             @extend %shadow;
             transition: transform 1.5s;
