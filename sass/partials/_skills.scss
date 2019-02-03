@@ -124,7 +124,7 @@ svg .skill-header {
 }
 
 #skill3 svg .color-rect {
-    fill: $violet;
+    fill: $blue;
     mask: url(#mask3);
 }
 
@@ -134,7 +134,7 @@ svg .skill-header {
 }
 
 #skill4 svg .color-rect {
-    fill: $blue;
+    fill: $violet;
     mask: url(#mask4);
 }
 
@@ -154,14 +154,19 @@ svg .skill-header {
         align-items: flex-start;
        box-shadow: $shadow;
 
+
         ul {
             font-family: 'Source Code Pro', monospace;
-            font-size: 1.2vw;
+            font-size: 1vw;
             margin-right: 5%;
             margin-left: 5%;
             color: #000000;
             list-style-type: none;
             padding: 0;
+
+            li {
+              margin-top:5px;
+            }
         }
     }
 

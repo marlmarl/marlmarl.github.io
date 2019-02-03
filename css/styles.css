@@ -651,7 +651,7 @@ svg .skill-header {
   mask: url(#mask2); }
 
 #skill3 svg .color-rect {
-  fill: #b453b3;
+  fill: #00cecb;
   -webkit-mask: url(#mask3);
   mask: url(#mask3); }
 
@@ -661,7 +661,7 @@ svg .skill-header {
   mask: url(#mask3); }
 
 #skill4 svg .color-rect {
-  fill: #00cecb;
+  fill: #b453b3;
   -webkit-mask: url(#mask4);
   mask: url(#mask4); }
 
@@ -682,12 +682,14 @@ svg .skill-header {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
     .skill-details .skill-list ul {
       font-family: 'Source Code Pro', monospace;
-      font-size: 1.2vw;
+      font-size: 1vw;
       margin-right: 5%;
       margin-left: 5%;
       color: #000000;
       list-style-type: none;
       padding: 0; }
+      .skill-details .skill-list ul li {
+        margin-top: 5px; }
   .skill-details .smallbox {
     position: absolute;
     left: 50%;
