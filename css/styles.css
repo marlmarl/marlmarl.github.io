@@ -605,7 +605,8 @@ nav {
     color: #1C1B20; }
 
 #skill1 .skill-bg {
-  background-image: url("../img/coding.png"); }
+  background-image: url("../img/coding.png");
+  background-repeat: repeat; }
 
 #skill2 .skill-bg {
   background-image: url("../img/design.png"); }
