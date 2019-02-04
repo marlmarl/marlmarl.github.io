@@ -196,7 +196,6 @@ section .flex-container {
 
 @media only screen and (max-width: 480px) {
   .section-intro p {
-    text-align: left;
     margin: 15px;
     line-height: 2.1em; } }
 
@@ -215,6 +214,9 @@ section .flex-container {
 
 .blue-text {
   color: #00cecb; }
+
+.section-intro .align-center {
+  text-align: center; }
 
 /*#####BOXES#####*/
 .basic-box, .box, .back-box, .skill-details .skill-close-box {
@@ -580,6 +582,11 @@ nav {
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear; }
+
+@media only screen and (max-width: 480px) {
+  .skills .section-intro p {
+    margin: 15px;
+    line-height: 2.1em; } }
 
 /*---separate skills---*/
 .skills .container {

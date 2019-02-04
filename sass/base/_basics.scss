@@ -127,9 +127,8 @@ section .flex-container {
 
 @media only screen and (max-width: 480px) {
   .section-intro p{
-      text-align: left;
       margin: 15px;
-      line-height:2.1em;
+      line-height:2.1em
   }
 }
 
@@ -153,4 +152,8 @@ section .flex-container {
 
 .blue-text {
   color:$blue;
+}
+
+.section-intro .align-center {
+  text-align: center;
 }
