@@ -99,7 +99,7 @@ section .container {
 }
 
 section .flex-container {
-   padding-top: 7%;
+   padding-top: 1%;
 }
 
 
@@ -117,10 +117,21 @@ section .flex-container {
 .section-intro {
    width: 75%;
    margin: 0 auto;
-   text-align: justify;
-   padding-top: 5%;
-
+   padding: 5%;
 }
+
+.section-intro p{
+    text-align: justify;
+    line-height: 2em;
+}
+
+@media only screen and (max-width: 480px) {
+  .section-intro p{
+      text-align: left;
+      margin:0 15px;
+  }
+}
+
 
 .highlight-it {
   border:1px solid black;
